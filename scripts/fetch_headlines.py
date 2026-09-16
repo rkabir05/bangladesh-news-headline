@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -77,11 +78,44 @@ def load_sources():
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def parse_feed(site_url: str, feed_url: str, pattern: str = "") -> list[dict]:
-    response = SESSION.get(feed_url, timeout=REQUEST_TIMEOUT)
-    response.raise_for_status()
+def http_get(url: str) -> bytes:
+    """Fetch a URL via curl, falling back to requests.
 
-    feed = feedparser.parse(response.content)
+    Several publishers fingerprint TLS handshakes and block non-browser clients
+    (Python requests gets 403 while the same URL loads through curl), so curl is
+    the primary transport on both GitHub runners and local machines.
+    """
+    try:
+        proc = subprocess.run(
+            [
+                "curl", "-sS", "-f", "-L",
+                "--retry", "2", "--retry-delay", "2", "--max-time", "45",
+                "-A", BROWSER_UA,
+                "-H", "Accept: text/html,application/xhtml+xml,application/xml,application/rss+xml,*/*;q=0.8",
+                "-H", "Accept-Language: bn,en;q=0.8",
+                url,
+            ],
+            capture_output=True,
+            timeout=60,
+        )
+        if proc.returncode == 0 and proc.stdout:
+            return proc.stdout
+        last_error = f"curl exit {proc.returncode}: {proc.stderr.decode(errors='replace')[:200]}"
+    except FileNotFoundError:
+        last_error = "curl not available"
+    except subprocess.TimeoutExpired:
+        last_error = "curl timeout"
+
+    try:
+        response = SESSION.get(url, timeout=REQUEST_TIMEOUT)
+        response.raise_for_status()
+        return response.content
+    except Exception as exc:  # noqa: BLE001 - report both transports
+        raise RuntimeError(f"{last_error} | requests fallback: {exc}") from exc
+
+
+def parse_feed(site_url: str, feed_url: str, pattern: str = "") -> list[dict]:
+    feed = feedparser.parse(http_get(feed_url))
     items: list[dict] = []
 
     for entry in feed.entries[: MAX_FETCH_PER_SOURCE * 3]:
@@ -105,13 +139,12 @@ def parse_homepage(site_url: str, pattern: str = "", extra_pages: list[str] | No
 
     for page_url in pages:
         try:
-            response = SESSION.get(page_url, timeout=REQUEST_TIMEOUT)
-            response.raise_for_status()
+            content = http_get(page_url)
         except Exception as exc:  # noqa: BLE001
-            print(f"    page fail {page_url}: {type(exc).__name__}")
+            print(f"    page fail {page_url}: {exc}")
             continue
 
-        soup = BeautifulSoup(response.text, "html.parser")
+        soup = BeautifulSoup(content, "html.parser")
         for tag in soup.select("h1 a, h2 a, h3 a, h4 a, article a"):
             title = clean_text(tag.get_text(" ", strip=True))
             href = tag.get("href", "")
