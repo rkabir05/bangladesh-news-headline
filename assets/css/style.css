@@ -124,6 +124,15 @@ body {
   font-size: .7rem;
 }
 
+.stretched-host {
+  color: inherit;
+  text-decoration: none;
+}
+
+.stretched-host:hover {
+  color: var(--red);
+}
+
 @media (max-width: 575.98px) {
   .hero { padding: 38px 0; }
   .hero h1 { font-size: 1.85rem; }

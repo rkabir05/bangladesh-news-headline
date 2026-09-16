@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="বাংলাদেশের ১৫টি অনলাইন সংবাদমাধ্যমের সর্বশেষ শিরোনাম।">
-  <title>বাংলাদেশ নিউজ হেডলাইনস</title>
+  <meta name="description" content="বাংলাদেশের ১৫টি অনলাইন সংবাদমাধ্যমের সর্বশেষ শিরোনাম — প্রতি ১০ মিনিটে অটো আপডেট।">
+  <title>বাংলাদেশ নিউজ হেডলাইনস — ১৫ পোর্টাল</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -33,15 +33,24 @@
   <div class="container">
     <div class="row g-4 align-items-center">
       <div class="col-lg-8">
-        <span class="live"><span></span> LIVE HEADLINES</span>
-        <h1 class="display-5 fw-bold mt-3">১৫টি অনলাইন সংবাদমাধ্যমের সর্বশেষ শিরোনাম</h1>
-        <p class="lead">প্রতিটি পোর্টাল থেকে সর্বনিম্ন ১০টি headline। GitHub Actions প্রতি ৫ মিনিটে ডেটা সংগ্রহ করে GitHub Pages-এ আপডেট প্রকাশ করবে।</p>
+        <span class="live"><span></span> LIVE · প্রতি ১০ মিনিটে অটো আপডেট</span>
+        <h1 class="display-6 fw-bold mt-3">১৫টি অনলাইন সংবাদমাধ্যমের সর্বশেষ শিরোনাম</h1>
+        <p class="lead">প্রতিটি পোর্টালের ১০টি করে সর্বশেষ শিরোনাম, প্রতিটি শিরোনামে মূল নিউজের লিংক। GitHub Actions প্রতি ১০ মিনিটে ডেটা সংগ্রহ করে GitHub Pages-এ প্রকাশ করে।</p>
       </div>
       <div class="col-lg-4">
         <div class="info-box">
-          <div class="text-secondary small">সর্বশেষ ডেটা</div>
+          <div class="text-secondary small">সর্বশেষ ডেটা আপডেট</div>
           <div id="updatedAt" class="fw-bold fs-5">লোড হচ্ছে...</div>
           <div id="summary" class="small text-secondary mt-2"></div>
+          <div class="small text-secondary mt-1">পরবর্তী রিফ্রেশ <span id="countdown">--</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input id="searchBox" type="search" class="form-control" placeholder="শিরোনাম খুঁজুন...">
         </div>
       </div>
     </div>
@@ -57,7 +66,7 @@
 
 <footer class="border-top bg-white py-4 mt-5">
   <div class="container text-center small text-secondary">
-    Headline links open the original publisher website. This site stores headlines/links, not full articles.
+    প্রতিটি শিরোনাম মূল প্রকাশকের ওয়েবসাইটে নিয়ে যায়। এই সাইটে শুধু শিরোনাম ও লিংক থাকে, সম্পূর্ণ অ্যাপর্ট নয়।
   </div>
 </footer>
 
