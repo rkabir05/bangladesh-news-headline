@@ -1,0 +1,12 @@
+{
+  "updated_at": null,
+  "refresh_minutes": 5,
+  "minimum_headlines_per_source": 10,
+  "sources": [],
+  "summary": {
+    "sources": 0,
+    "sources_with_10_plus": 0,
+    "total_headlines": 0,
+    "warnings": []
+  }
+}

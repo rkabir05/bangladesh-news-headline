@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --navy: #092744;
+  --blue: #123f70;
+  --red: #d51f35;
+  --bg: #f4f6f9;
+  --border: #e2e7ec;
+}
+
+body {
+  font-family: "Noto Sans Bengali", system-ui, sans-serif;
+  background: var(--bg);
+  color: #17212b;
+}
+
+.topbar {
+  background: var(--navy);
+  box-shadow: 0 2px 12px rgba(0,0,0,.12);
+}
+
+.navbar { min-height: 68px; }
+
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--blue));
+  color: #fff;
+  padding: 55px 0;
+}
+
+.hero .lead {
+  color: rgba(255,255,255,.82);
+  max-width: 850px;
+}
+
+.live {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.1);
+  border-radius: 999px;
+  font-size: .75rem;
+  letter-spacing: .08em;
+}
+
+.live span {
+  width: 8px;
+  height: 8px;
+  background: #ff5366;
+  border-radius: 50%;
+}
+
+.info-box {
+  background: #fff;
+  color: #17212b;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.14);
+}
+
+.source-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 5px 18px rgba(20,35,50,.05);
+}
+
+.source-head {
+  padding: 15px 17px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.source-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.source-count {
+  white-space: nowrap;
+  font-size: .72rem;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #edf3f8;
+  color: var(--blue);
+}
+
+.headlines {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.headlines li {
+  border-bottom: 1px solid #edf0f3;
+}
+
+.headlines li:last-child { border-bottom: 0; }
+
+.headlines a {
+  display: block;
+  color: #24313d;
+  text-decoration: none;
+  padding: 12px 17px;
+  line-height: 1.52;
+  font-size: .92rem;
+}
+
+.headlines a:hover {
+  color: var(--red);
+  background: #fafbfc;
+}
+
+.headline-time {
+  display: block;
+  margin-top: 4px;
+  color: #8a96a3;
+  font-size: .7rem;
+}
+
+@media (max-width: 575.98px) {
+  .hero { padding: 38px 0; }
+  .hero h1 { font-size: 1.85rem; }
+}
