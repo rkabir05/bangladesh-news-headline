@@ -72,6 +72,67 @@ def resolve_bing_redirect(url: str) -> str:
         return clean
 
 
+def extract_thumbnail(entry: dict) -> str:
+    """Pull an image URL from RSS enclosure / media tags, else item HTML.
+
+    feedparser normalizes <enclosure url>, <media:thumbnail>, <media:content>
+    and <itunes:image> into media_content / media_thumbnail / enclosures; the
+    raw description/summary HTML is the last resort.
+    """
+    url = ""
+    for tag in entry.get("media_thumbnail", []) or []:
+        if tag.get("url"):
+            url = tag["url"].strip()
+            break
+    if not url:
+        for tag in entry.get("media_content", []) or []:
+            if tag.get("url") and str(tag.get("medium", "image") or "image").lower() == "image":
+                url = tag["url"].strip()
+                break
+            if tag.get("url") and str(tag.get("type", "")).startswith("image/"):
+                url = tag["url"].strip()
+                break
+    if not url:
+        for enc in entry.get("enclosures", []) or []:
+            if enc.get("href") and str(enc.get("type", "image") or "image").startswith("image"):
+                url = enc["href"].strip()
+                break
+    if not url:
+        # Bing News RSS carries thumbnails in its News:Image extension, which
+        # feedparser surfaces as namespaced fields on the entry.
+        raw = entry.get("news_image")
+        if isinstance(raw, list):
+            raw = raw[0] if raw else ""
+        if isinstance(raw, dict):
+            raw = raw.get("value") or ""
+        if isinstance(raw, str) and raw.startswith("http"):
+            url = raw.strip()
+
+    if not url:
+        # feedparser may not map unknown namespaces; scan the raw item XML.
+        if not url:
+            detail = entry.get("summary_detail", {}) or {}
+            payload_xml = detail.get("value", "") or entry.get("summary", "") or ""
+            match = re.search(
+                r"<news:image>\s*(http[^<\s]+)", payload_xml, re.IGNORECASE
+            )
+            if match:
+                url = match.group(1).strip()
+
+    if not url:
+        for field in ("summary", "description"):
+            html = entry.get(field) or ""
+            if "<img" not in html:
+                continue
+            match = re.search(r'<img\b[^>]*\bsrc=["\']([^"\']+)', html, re.IGNORECASE)
+            if match and match.group(1).startswith("http"):
+                url = match.group(1).strip()
+                break
+    if not url:
+        return ""
+    return url if url.startswith("http") else ""
+
+
 def gnews_search_url(domain: str) -> str:
     """Google News site-search RSS for a domain."""
     from urllib.parse import quote
@@ -102,6 +163,7 @@ def parse_gnews(site_url: str, pattern: str = "") -> list[dict]:
             "title": title,
             "url": urljoin(site_url, link),
             "time": clean_text(published),
+            "image": extract_thumbnail(entry),
         })
     return dedupe([
         i for i in items
@@ -166,6 +228,7 @@ def parse_feed(site_url: str, feed_url: str, pattern: str = "") -> list[dict]:
             "title": title,
             "url": urljoin(site_url, link),
             "time": clean_text(published),
+            "image": extract_thumbnail(entry),
         })
 
     return dedupe([i for i in items if is_probable_article(i["url"], i["title"], pattern)])

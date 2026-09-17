@@ -1,5 +1,5 @@
 {
-    "updated_at":  "2026-09-17T09:10:35+00:00",
+    "updated_at":  "2026-09-17T09:38:23+00:00",
     "refresh_minutes":  10,
     "minimum_headlines_per_source":  10,
     "sources":  [
@@ -9,54 +9,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
-                                              "title":  "শুধু পৃথিবী নয়, চাঁদের আশপাশেও যুদ্ধের প্রস্তুতি জোরদার করছে যুক্তরাষ্ট্র",
-                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301757",
-                                              "time":  "Thu, 17 Sep 2026 15:03:04 GMT"
+                                              "title":  "কেন্দ্রীয় ব্যাংক সুদ হার বাড়ানোয় বিপাকে মার্কিনীরা?",
+                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301768",
+                                              "time":  "Thu, 17 Sep 2026 15:34:31 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "কক্সবাজারে কার্যক্রম নিষিদ্ধ যুবলীগ নেতাসহ আটক ২",
-                                              "url":  "https://www.bd-pratidin.com/country/2026/09/17/1301756",
-                                              "time":  "Thu, 17 Sep 2026 15:02:20 GMT"
+                                              "title":  "লালমনিরহাটে ১০ সামাজিক সংগঠনের মাঝে বসুন্ধরা শুভসংঘের ১ হাজার গাছের চারা বিতরণ",
+                                              "url":  "https://www.bd-pratidin.com/bashundhara-shuvasongo/2026/09/17/1301767",
+                                              "time":  "Thu, 17 Sep 2026 15:31:13 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "তিন বছর পর গোপালগঞ্জ স্টেডিয়ামে ফিরছে প্রিমিয়ার লিগ ফুটবল",
-                                              "url":  "https://www.bd-pratidin.com/sports/2026/09/17/1301755",
-                                              "time":  "Thu, 17 Sep 2026 14:58:28 GMT"
+                                              "title":  "নতুন শুল্ক ইস্যুতে যুক্তরাষ্ট্রকে কড়া সতর্কবার্তা ভারতের",
+                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301766",
+                                              "time":  "Thu, 17 Sep 2026 15:29:40 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "রাশিয়ার স্যাটেলাইট তথ্যেই ‘নিখুঁত’ হয়েছে ইরান: সিএনএন",
-                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301754",
-                                              "time":  "Thu, 17 Sep 2026 14:51:55 GMT"
+                                              "title":  "রূপগঞ্জে বসুন্ধরা শুভসংঘের উদ্যোগে গণিত অলিম্পিয়াড, আলোচনা ও পুরস্কার বিতরণ",
+                                              "url":  "https://www.bd-pratidin.com/bashundhara-shuvasongo/2026/09/17/1301765",
+                                              "time":  "Thu, 17 Sep 2026 15:27:56 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "ফিলিস্তিন নিয়ে মন্তব্যে কনসার্ট থেকে বাদ, এবার বিশাল অনুদানের ঘোষণা ম্যাকলেমারের",
-                                              "url":  "https://www.bd-pratidin.com/entertainment/2026/09/17/1301753",
-                                              "time":  "Thu, 17 Sep 2026 14:47:37 GMT"
+                                              "title":  "চাঁপাইনবাবগঞ্জে আন্তঃজেলা চোরচক্রের মূলহোতাসহ গ্রেফতার ৬",
+                                              "url":  "https://www.bd-pratidin.com/country/2026/09/17/1301764",
+                                              "time":  "Thu, 17 Sep 2026 15:20:23 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "রুশ ধনকুবেরের অর্থে ট্রাম্পপুত্রের বিয়ে পরবর্তী পার্টি, কংগ্রেসে তদন্তের উদ্যোগ",
-                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301752",
-                                              "time":  "Thu, 17 Sep 2026 14:42:17 GMT"
+                                              "title":  "গণমাধ্যমের স্বাধীনতা মানে স্বেচ্ছাচারিতা নয়: প্রেস সচিব",
+                                              "url":  "https://www.bd-pratidin.com/national/2026/09/17/1301763",
+                                              "time":  "Thu, 17 Sep 2026 15:19:58 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "শুক্রবার সকাল থেকে ২৪ ঘণ্টা গ্যাস থাকবে না যেসব এলাকায়",
-                                              "url":  "https://www.bd-pratidin.com/city-news/2026/09/17/1301751",
-                                              "time":  "Thu, 17 Sep 2026 14:41:10 GMT"
+                                              "title":  "মানবপাচার প্রতিরোধে সরকার দৃঢ়প্রতিজ্ঞ: আইনমন্ত্রী",
+                                              "url":  "https://www.bd-pratidin.com/minister-speech/2026/09/17/1301762",
+                                              "time":  "Thu, 17 Sep 2026 15:18:44 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "প্রতিবেশী দেশগুলোর সঙ্গে সমস্যা সমাধানে প্রস্তুত ইরান: পেজেশকিয়ান",
-                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301750",
-                                              "time":  "Thu, 17 Sep 2026 14:38:09 GMT"
+                                              "title":  "আসিফ মাহমুদের তথ্য ও নথি চেয়ে বিএফআইইউকে দুদকের চিঠি",
+                                              "url":  "https://www.bd-pratidin.com/national/2026/09/17/1301761",
+                                              "time":  "Thu, 17 Sep 2026 15:17:23 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "মক্কার কাছে হুতিদের ড্রোন হামলার ভিডিও বলে ছড়ানো হচ্ছে মদিনার এক বছরের পুরোনো দৃশ্য",
-                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301749",
-                                              "time":  "Thu, 17 Sep 2026 14:36:42 GMT"
+                                              "title":  "শি জিনপিংয়ের অসুস্থতার দাবি, যা জানা গেল",
+                                              "url":  "https://www.bd-pratidin.com/international-news/2026/09/17/1301760",
+                                              "time":  "Thu, 17 Sep 2026 15:14:56 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "চোটে ব্রাজিল দল থেকে ছিটকে গেলেন পেদ্রো",
-                                              "url":  "https://www.bd-pratidin.com/sports/2026/09/17/1301748",
-                                              "time":  "Thu, 17 Sep 2026 14:33:46 GMT"
+                                              "title":  "এআই সাম্রাজ্যের শীর্ষ কোম্পানি কারা, তাদের বাজারমূল্য কত?",
+                                              "url":  "https://www.bd-pratidin.com/tech-world/2026/09/17/1301759",
+                                              "time":  "Thu, 17 Sep 2026 15:11:38 GMT",
+                                              "image":  ""
                                           }
                                       ],
                         "status":  "ok"
@@ -67,54 +77,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
+                                              "title":  "বিনয়ের ঈশ্বরীগণ",
+                                              "url":  "https://www.prothomalo.com/onnoalo/treatise/oa8k1yjmjc",
+                                              "time":  "Thu, 17 Sep 2026 09:13:32 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/n9uu2wk3/Onnoalo.jpg?w=280"
+                                          },
+                                          {
+                                              "title":  "এআইয়ের ছোঁয়ায় বদলে যাচ্ছে বলিউড",
+                                              "url":  "https://www.prothomalo.com/entertainment/bollywood/a77jj9x98e",
+                                              "time":  "Thu, 17 Sep 2026 09:02:35 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-07-25/4wkhc2up/4734035-1835523401.jpg?w=280"
+                                          },
+                                          {
+                                              "title":  "ময়মনসিংহ মেডিকেলে অগ্নিকাণ্ডের তদন্তে বিচার বিভাগীয় কমিটি ও ক্ষতিপূরণ দাবি",
+                                              "url":  "https://www.prothomalo.com/bangladesh/district/frnwru22ep",
+                                              "time":  "Thu, 17 Sep 2026 09:02:30 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/w2p8q6ly/mymensinghdh169420260917whatsapp-image-2026-09-17-at-12.19.52-pm.jpg?w=280"
+                                          },
+                                          {
+                                              "title":  "জন্ম থেকেই বাঁ হাত নেই, কটু কথা শোনা মেয়েটি এখন চাকরিজীবী",
+                                              "url":  "https://www.prothomalo.com/bangladesh/district/p6uuaxn899",
+                                              "time":  "Thu, 17 Sep 2026 08:59:05 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/imfle8ar/Nazma-Akhter.jpg?w=280"
+                                          },
+                                          {
                                               "title":  "মোহাম্মদপুরে চাপাতি দিয়ে কুপিয়ে মোটরসাইকেল ও টাকা ছিনতাই",
                                               "url":  "https://www.prothomalo.com/bangladesh/capital/hh01az7isl",
-                                              "time":  "Thu, 17 Sep 2026 08:53:19 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:53:19 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-08-26/0ks6nlre/AM.png?w=280"
                                           },
                                           {
                                               "title":  "প্যারিসে বিলাসিতা আর মিলানে ঐতিহ্য, তাহলে লন্ডন ফ্যাশন উইকের পরিচয় কী?",
                                               "url":  "https://www.haal.fashion/fashion/trend/5s03p0ngmo",
-                                              "time":  "Thu, 17 Sep 2026 08:51:16 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:51:16 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/d2i2nj9q/hero.webp?w=280"
                                           },
                                           {
                                               "title":  "রাত ৮টার পর দোকানপাট খোলা রাখতে চান মালিকেরা, সৌরবিদ্যুতের জন্য ঋণের দাবি",
                                               "url":  "https://www.prothomalo.com/business/economics/rc9jahiau4",
-                                              "time":  "Thu, 17 Sep 2026 08:50:02 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:50:02 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/q8jxtpgq/Business.jpg?w=280"
                                           },
                                           {
                                               "title":  "৩৬ বছরের ফার্নিচার ব্যবসার সাফল্য",
                                               "url":  "https://www.prothomalo.com/business/economics/o2zjeldji9",
-                                              "time":  "Thu, 17 Sep 2026 08:50:00 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:50:00 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/2vhdptrt/Furniture.PNG?w=280"
                                           },
                                           {
                                               "title":  "হুতিদের ঠেকাতে সামরিক সহায়তা চেয়ে মিত্রদের দ্বারে সৌদি আরব, সাড়া পাবে কি",
                                               "url":  "https://www.prothomalo.com/world/middle-east/aabi6l5pxl",
-                                              "time":  "Thu, 17 Sep 2026 08:45:13 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:45:13 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/9xx96oa2/Air-defence.jpg?w=280"
                                           },
                                           {
                                               "title":  "‘কৃত্রিম বুদ্ধিমত্তার যুগে টিকতে হলে যে প্রস্তুতি নিতে হবে শিক্ষার্থীদের’",
                                               "url":  "https://www.prothomalo.com/bangladesh/district/d23twtky1u",
-                                              "time":  "Thu, 17 Sep 2026 08:35:11 +0000"
-                                          },
-                                          {
-                                              "title":  "নিউক্লিয় বল বলতে কি বুঝায়",
-                                              "url":  "https://www.bigganchinta.com/chemistry/3i2rc8m6ov",
-                                              "time":  "Thu, 17 Sep 2026 08:30:33 +0000"
-                                          },
-                                          {
-                                              "title":  "পশ্চিম বাজার থেকে জেলা মৌলভীবাজার হলো কীভাবে",
-                                              "url":  "https://www.prothomalo.com/business/economics/3omh3ziq8k",
-                                              "time":  "Thu, 17 Sep 2026 08:18:47 +0000"
-                                          },
-                                          {
-                                              "title":  "নারায়ণগঞ্জে ৭ কোটি টাকার ভবন করেছে সওজ, তবে অফিস চলে ঢাকায়",
-                                              "url":  "https://www.prothomalo.com/bangladesh/district/uuo5vgtqyu",
-                                              "time":  "Thu, 17 Sep 2026 08:07:44 +0000"
-                                          },
-                                          {
-                                              "title":  "একাধিক বালিশে ঘুমালে কি ঘাড়ে সমস্যা হতে পারে",
-                                              "url":  "https://www.prothomalo.com/lifestyle/health/mngicg9mo0",
-                                              "time":  "Thu, 17 Sep 2026 08:06:44 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:35:11 +0000",
+                                              "image":  "https://media.prothomalo.com/prothomalo-bangla/2026-09-17/78x5dnsk/Ctg-1.jpg?w=280"
                                           }
                                       ],
                         "status":  "ok"
@@ -125,54 +145,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
+                                              "title":  "গোডাউন ভাড়া নিয়ে বিরোধের জেরে যুবককে কুপিয়ে জখম",
+                                              "url":  "https://www.kalbela.com/country-news/329199",
+                                              "time":  "Thu, 17 Sep 2026 01:57:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.E53G-3KbkesL6cP7j26ESA\u0026pid=News"
+                                          },
+                                          {
                                               "title":  "ইরানের সঙ্গে আমরা যুদ্ধের শেষ দিকে পৌঁছেছি: ট্রাম্প",
                                               "url":  "https://www.kalbela.com/world/middle-east/329200",
-                                              "time":  "Thu, 17 Sep 2026 01:51:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:51:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.5CpY1vZ9uYm3GYrZVQkF0g\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "২৪ ঘণ্টা গ্যাস সরবরাহ বন্ধ থাকবে যেসব এলাকায়",
+                                              "url":  "https://www.kalbela.com/national/329202",
+                                              "time":  "Thu, 17 Sep 2026 01:51:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.KvLJrTArMw-83ezfInwjLg\u0026pid=News"
                                           },
                                           {
                                               "title":  "দেশে ১ কোটির বেশি তরুণ-তরুণী নেশাগ্রস্ত: শিবির নেতা সিবগাতুল্লাহ",
                                               "url":  "https://www.kalbela.com/country-news/329192",
-                                              "time":  "Thu, 17 Sep 2026 01:29:00 GMT"
-                                          },
-                                          {
-                                              "title":  "মোটরসাইকেল-ইজিবাইক সংঘর্ষে প্রাণ গেল মাদ্রাসা শিক্ষার্থীর",
-                                              "url":  "https://www.kalbela.com/country-news/329185",
-                                              "time":  "Thu, 17 Sep 2026 00:58:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:29:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.fOm1tMdUmLS7_Slsijysew\u0026pid=News"
                                           },
                                           {
                                               "title":  "বাড়ি ছাড়া রায়হান ৭ মাস পর ফিরল এক পা হারিয়ে, বক্তব্যও রহস্যে ...",
                                               "url":  "https://www.kalbela.com/country-news/329181",
-                                              "time":  "Thu, 17 Sep 2026 00:37:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 00:37:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.RC6xiHcqotTCZ6wg4RhegQ\u0026pid=News"
                                           },
                                           {
                                               "title":  "নৈরাজ্যের রাজনীতির বদলে আমরা কার্যকরী সংসদ তৈরি করেছি: জহির ...",
                                               "url":  "https://www.kalbela.com/country-news/329187",
-                                              "time":  "Thu, 17 Sep 2026 00:54:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 00:54:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.6ugPfPX_2hEdY6YC_1MgCQ\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "মোটরসাইকেল-ইজিবাইক সংঘর্ষে প্রাণ গেল মাদ্রাসা শিক্ষার্থীর",
+                                              "url":  "https://www.kalbela.com/country-news/329185",
+                                              "time":  "Thu, 17 Sep 2026 00:58:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.vU0gIt5-u6hJrTcnbPekvw\u0026pid=News"
                                           },
                                           {
                                               "title":  "মাদকসেবনের সময় আটক ২, পুকুর পরিষ্কার করালেন স্থানীয়রা",
                                               "url":  "https://www.kalbela.com/country-news/329177",
-                                              "time":  "Thu, 17 Sep 2026 00:23:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 00:23:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.0nGg6gioAJK3FL9UfI78sQ\u0026pid=News"
                                           },
                                           {
                                               "title":  "দুধে পানি মেশানোয় ৯ বিক্রেতাকে জরিমানা",
                                               "url":  "https://www.kalbela.com/country-news/329175",
-                                              "time":  "Wed, 16 Sep 2026 23:59:00 GMT"
+                                              "time":  "Wed, 16 Sep 2026 23:59:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.dYBPOT2oYtWrhA7X2QuuiA\u0026pid=News"
                                           },
                                           {
                                               "title":  "ভারতের ইলিশকে ‘দেশি’ বলে বিক্রি করায় যশোরে আড়তদারকে জরিমানা",
                                               "url":  "https://www.kalbela.com/country-news/329173",
-                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT"
-                                          },
-                                          {
-                                              "title":  "ওসামা বিন লাদেন কোথায় লুকিয়েছিলেন, মনে রাখুন: জাতিসংঘে ভারত",
-                                              "url":  "https://www.kalbela.com/world/india/329165",
-                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT"
-                                          },
-                                          {
-                                              "title":  "পদ্মাপাড়ে ফিরল গ্রাম বাংলার ঐতিহ্য, নৌকা বাইচে হাজারো মানুষের ...",
-                                              "url":  "https://www.kalbela.com/country-news/329157",
-                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT"
+                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.Y3KwR1NaZm5BGeeypuQ8RA\u0026pid=News"
                                           }
                                       ],
                         "status":  "ok"
@@ -183,54 +213,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
-                                              "title":  "রংপুর অভিমুখী লংমার্চে কোনো বিশৃঙ্খলা চাই না : গোলাম পরওয়ার",
-                                              "url":  "https://www.dhakapost.com/politics/483543",
-                                              "time":  "Thu, 17 Sep 2026 00:42:00 GMT"
+                                              "title":  "পাঁচ বছরের বেশি সময় কর্মস্থলে অনুপস্থিত থাকা কর্মকর্তাকে ...",
+                                              "url":  "https://www.dhakapost.com/national/483524",
+                                              "time":  "Wed, 16 Sep 2026 23:15:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.bzyf9JusO00sMQKFWn-MGQ\u0026pid=News"
                                           },
                                           {
-                                              "title":  "৫,০০০ কোটি টাকার সিএমএসএমই পুনঃঅর্থায়ন তহবিলে যুক্ত হলো এমটিবি",
-                                              "url":  "https://www.dhakapost.com/economy/483499",
-                                              "time":  "Wed, 16 Sep 2026 21:11:00 GMT"
+                                              "title":  "ভালো অর্জনকে স্বীকৃতি দেবে সরকার : প্রধানমন্ত্রী",
+                                              "url":  "https://www.dhakapost.com/national/483527",
+                                              "time":  "Wed, 16 Sep 2026 23:20:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.Toku2g6G0gbyu4ow1IVHOw\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "রংপুর অভিমুখী লংমার্চে কোনো বিশৃঙ্খলা চাই না : গোলাম পরওয়ার",
+                                              "url":  "https://www.dhakapost.com/politics/483543",
+                                              "time":  "Thu, 17 Sep 2026 00:42:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.U7ZjdFmLzjtIpR2q88E41g\u0026pid=News"
                                           },
                                           {
                                               "title":  "সার-কীটনাশক নিয়ে শঙ্কায় লালমনিরহাটের আমন চাষিরা",
                                               "url":  "https://www.dhakapost.com/country/483501",
-                                              "time":  "Wed, 16 Sep 2026 21:19:00 GMT"
+                                              "time":  "Wed, 16 Sep 2026 21:19:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.m3lYAR64ImSJzqdkGVj_YQ\u0026pid=News"
                                           },
                                           {
-                                              "title":  "বিজয় অভিনীত ‘মহারাজা’ রিমেক হচ্ছে হলিউডে",
-                                              "url":  "https://www.dhakapost.com/entertainment/483503",
-                                              "time":  "Wed, 16 Sep 2026 21:25:00 GMT"
-                                          },
-                                          {
-                                              "title":  "হরমুজে যুক্তরাষ্ট্রের জাহাজে হামলা ইরানের, কয়েক জন মার্কিন সেনা ...",
-                                              "url":  "https://www.dhakapost.com/international/483498",
-                                              "time":  "Wed, 16 Sep 2026 21:09:00 GMT"
+                                              "title":  "৫,০০০ কোটি টাকার সিএমএসএমই পুনঃঅর্থায়ন তহবিলে যুক্ত হলো এমটিবি",
+                                              "url":  "https://www.dhakapost.com/economy/483499",
+                                              "time":  "Wed, 16 Sep 2026 21:11:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.I6rKpEZeECcUYRTaQVD6jQ\u0026pid=News"
                                           },
                                           {
                                               "title":  "ব্র্যান্ড মার্কেটিংয়ে নিয়োগ দেবে আকিজ বশির গ্রুপ",
                                               "url":  "https://www.dhakapost.com/jobs-career/483502",
-                                              "time":  "Wed, 16 Sep 2026 21:22:00 GMT"
+                                              "time":  "Wed, 16 Sep 2026 21:22:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.l6qeI2xOQRTuMQd2_voDcg\u0026pid=News"
                                           },
                                           {
-                                              "title":  "এইচএসসি পাসেই চাকরি দেবে ব্র্যাক এনজিও, কাজ সপ্তাহে ৫ দিন",
-                                              "url":  "https://www.dhakapost.com/jobs-career/483496",
-                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT"
+                                              "title":  "বিজয় অভিনীত ‘মহারাজা’ রিমেক হচ্ছে হলিউডে",
+                                              "url":  "https://www.dhakapost.com/entertainment/483503",
+                                              "time":  "Wed, 16 Sep 2026 21:25:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.-Zf-BvaQTFlIe71-c9_Vpg\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "হরমুজে যুক্তরাষ্ট্রের জাহাজে হামলা ইরানের, কয়েক জন মার্কিন সেনা ...",
+                                              "url":  "https://www.dhakapost.com/international/483498",
+                                              "time":  "Wed, 16 Sep 2026 21:09:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.jxri_8-gATgRv3qJPvd5VA\u0026pid=News"
                                           },
                                           {
                                               "title":  "আমরা সম্ভবত যুদ্ধের শেষ পর্যায়ে পৌঁছে গিয়েছি : ট্রাম্প",
                                               "url":  "https://www.dhakapost.com/international/483533",
-                                              "time":  "Wed, 16 Sep 2026 23:46:00 GMT"
-                                          },
-                                          {
-                                              "title":  "বিদেশি শিক্ষার্থীদের আস্থা হারাচ্ছে ইবি, গত দুই বছরে স্নাতকে ...",
-                                              "url":  "https://www.dhakapost.com/campus/483495",
-                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT"
+                                              "time":  "Wed, 16 Sep 2026 23:46:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.2oyRuYsUxUvHdiAslq0xtQ\u0026pid=News"
                                           },
                                           {
                                               "title":  "শিক্ষকদের জন্য আসছে নতুন বিধি, বন্ধ হচ্ছে রাজনীতিতে জড়ানোর সুযোগ",
                                               "url":  "https://www.dhakapost.com/education/483512",
-                                              "time":  "Thu, 17 Sep 2026 02:10:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 02:33:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.m5sJOlCK6iz4jH2CUwO0-g\u0026pid=News"
                                           }
                                       ],
                         "status":  "ok"
@@ -241,54 +281,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
+                                              "title":  "‘পৃথিবীর বুকে নিজের চিহ্ন রেখে যেতে চাই’, কাশ্মীরি কিশোর কাজমি",
+                                              "url":  "https://www.asia-post.com/probash/apnshoi971ey-%E0%A6%AA%E0%A7%83%E0%A6%A5%E0%A6%BF%E0%A6%AC%E0%A7%80%E0%A6%B0-%E0%A6%AC%E0%A7%81%E0%A6%95%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%9A%E0%A6%BF%E0%A6%B9%E0%A7%8D%E0%A6%A8-%E0%A6%B0%E0%A7%87%E0%A6%96%E0%A7%87-%E0%A6%AF%E0%A7%87%E0%A6%A4%E0%A7%87-%E0%A6%9A%E0%A6%BE%E0%A6%87-%E0%A6%95%E0%A6%BE%E0%A6%B6%E0%A7%8D%E0%A6%AE%E0%A7%80%E0%A6%B0%E0%A6%BF-%E0%A6%95%E0%A6%BF%E0%A6%B6%E0%A7%8B%E0%A6%B0-%E0%A6%95%E0%A6%BE%E0%A6%9C%E0%A6%AE%E0%A6%BF",
+                                              "time":  "Thu, 17 Sep 2026 09:29:56 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/Sayeed-Ali-or-Azmi-d861b6-720x405.webp"
+                                          },
+                                          {
+                                              "title":  "শিকার নিষিদ্ধ শাপলা পাতা মাছ ৮৬ হাজার টাকায় বিক্রি",
+                                              "url":  "https://www.asia-post.com/country-news/apf8v5nuat8s-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7-%E0%A6%B6%E0%A6%BE%E0%A6%AA%E0%A6%B2%E0%A6%BE-%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%9B-%E0%A7%AE%E0%A7%AC-%E0%A6%B9%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BF",
+                                              "time":  "Thu, 17 Sep 2026 09:26:24 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/patahousefish-682ba1-720x405.webp"
+                                          },
+                                          {
+                                              "title":  "মোহাম্মদপুরে ব্যবসায়ীকে কুপিয়ে মোটরসাইকেল ও টাকা ছিনতাই",
+                                              "url":  "https://www.asia-post.com/capital/apomes6gez7a-%E0%A6%AE%E0%A7%8B%E0%A6%B9%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A6%A6%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%87-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A7%80%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%81%E0%A6%AA%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AE%E0%A7%8B%E0%A6%9F%E0%A6%B0%E0%A6%B8%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%87%E0%A6%B2-%E0%A6%93-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%9B%E0%A6%BF%E0%A6%A8%E0%A6%A4%E0%A6%BE%E0%A6%87",
+                                              "time":  "Thu, 17 Sep 2026 09:21:08 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/mohammadpur-ab33d4-720x405.webp"
+                                          },
+                                          {
+                                              "title":  "কুমিল্লায় ইউপি সদস্য ‘কিলিং মিশনে’ অংশ নেওয়া আসামি গ্রেপ্তার",
+                                              "url":  "https://www.asia-post.com/country-news/apdysrgprxbg-%E0%A6%95%E0%A7%81%E0%A6%AE%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A7%9F-%E0%A6%87%E0%A6%89%E0%A6%AA%E0%A6%BF-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF-%E0%A6%95%E0%A6%BF%E0%A6%B2%E0%A6%BF%E0%A6%82-%E0%A6%AE%E0%A6%BF%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%85%E0%A6%82%E0%A6%B6-%E0%A6%A8%E0%A7%87%E0%A6%93%E0%A7%9F%E0%A6%BE-%E0%A6%86%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%BF-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0",
+                                              "time":  "Thu, 17 Sep 2026 09:18:38 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/cumillaarrest-9b2ec0-720x405.webp"
+                                          },
+                                          {
+                                              "title":  "ভারতে আশ্রিত দণ্ডিত পলাতকদের বিষয়ে সতর্ক করে ত্রিবেদীকে বার্তা",
+                                              "url":  "https://www.asia-post.com/bangladesh/apge7pi8bfuz-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%A4-%E0%A6%A6%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A6%BF%E0%A6%A4-%E0%A6%AA%E0%A6%B2%E0%A6%BE%E0%A6%A4%E0%A6%95%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%B7%E0%A7%9F%E0%A7%87-%E0%A6%B8%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A7%87-%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%A6%E0%A7%80%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE",
+                                              "time":  "Thu, 17 Sep 2026 09:10:54 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/tribedi-dc2b88-720x405.webp"
+                                          },
+                                          {
+                                              "title":  "স্বামী-স্ত্রীর ঝগড়া, ছুরিকাঘাতে ছেলের মৃত্যু",
+                                              "url":  "https://www.asia-post.com/country-news/apnitqd6ajr2-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%9D%E0%A6%97%E0%A7%9C%E0%A6%BE-%E0%A6%9B%E0%A7%81%E0%A6%B0%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%98%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%9B%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81",
+                                              "time":  "Thu, 17 Sep 2026 09:10:26 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/NewsLabAsiaPost52886e1b-d034-4833-8e23-cf9254456ae6.jpg"
+                                          },
+                                          {
                                               "title":  "ভাইরাল অডিওটি এআই দিয়ে তৈরি, দাবি ওসি রাকিবুলের",
                                               "url":  "https://www.asia-post.com/bangladesh/ap3t8yeuycdk-%E0%A6%AD%E0%A6%BE%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%B2-%E0%A6%85%E0%A6%A1%E0%A6%BF%E0%A6%93%E0%A6%9F%E0%A6%BF-%E0%A6%8F%E0%A6%86%E0%A6%87-%E0%A6%A6%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF-%E0%A6%93%E0%A6%B8%E0%A6%BF-%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%BF%E0%A6%AC%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0",
-                                              "time":  "Thu, 17 Sep 2026 09:03:56 +0000"
+                                              "time":  "Thu, 17 Sep 2026 09:03:56 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/AP-3c90fe-720x405.webp"
                                           },
                                           {
                                               "title":  "ভূমি অফিসের কর্মকর্তা-কর্মচারীদের নজরদারিতে অ্যাপ চালু করল সরকার",
                                               "url":  "https://www.asia-post.com/bangladesh/ap9lvafjnnlb-%E0%A6%AD%E0%A7%82%E0%A6%AE%E0%A6%BF-%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%B0-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%9C%E0%A6%B0%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A7%81-%E0%A6%95%E0%A6%B0%E0%A6%B2-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0",
-                                              "time":  "Thu, 17 Sep 2026 09:03:25 +0000"
+                                              "time":  "Thu, 17 Sep 2026 09:03:25 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/bhumi-39c5a4-720x405.webp"
                                           },
                                           {
                                               "title":  "আকস্মিক ঝড়ে পদ্মায় ডুবে গেছে অর্ধশত নৌকা",
                                               "url":  "https://www.asia-post.com/country-news/apr9iglqksl4-%E0%A6%86%E0%A6%95%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%95-%E0%A6%9D%E0%A7%9C%E0%A7%87-%E0%A6%AA%E0%A6%A6%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A7%9F-%E0%A6%A1%E0%A7%81%E0%A6%AC%E0%A7%87-%E0%A6%97%E0%A7%87%E0%A6%9B%E0%A7%87-%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A7%E0%A6%B6%E0%A6%A4-%E0%A6%A8%E0%A7%8C%E0%A6%95%E0%A6%BE",
-                                              "time":  "Thu, 17 Sep 2026 08:49:46 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:49:46 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/nawka-db06e5-720x405.webp"
                                           },
                                           {
                                               "title":  "সাভারে এসআই আলতাফ হত্যা: জড়িতদের দ্রুত গ্রেপ্তারের নির্দেশ স্বরাষ্ট্রমন্ত্রীর",
                                               "url":  "https://www.asia-post.com/bangladesh/apf0j8fxj97u-%E0%A6%B8%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%8F%E0%A6%B8%E0%A6%86%E0%A6%87-%E0%A6%86%E0%A6%B2%E0%A6%A4%E0%A6%BE%E0%A6%AB-%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE-%E0%A6%9C%E0%A7%9C%E0%A6%BF%E0%A6%A4%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%A4-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%B0%E0%A6%BE%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0",
-                                              "time":  "Thu, 17 Sep 2026 08:46:37 +0000"
-                                          },
-                                          {
-                                              "title":  "বেদানার বীজ খেলে কী হতে পারে, জেনে নিন",
-                                              "url":  "https://www.asia-post.com/lifestyle/apuni863fydv-%E0%A6%AC%E0%A7%87%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A7%80%E0%A6%9C-%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A7%80-%E0%A6%B9%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%9C%E0%A7%87%E0%A6%A8%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%A8",
-                                              "time":  "Thu, 17 Sep 2026 08:34:47 +0000"
-                                          },
-                                          {
-                                              "title":  "আসিফ মাহমুদের লেনদেনের তথ্য চেয়ে বিএফআইইউতে দুদকের চিঠি",
-                                              "url":  "https://www.asia-post.com/bangladesh/ap5fpgptmv77-%E0%A6%86%E0%A6%B8%E0%A6%BF%E0%A6%AB-%E0%A6%AE%E0%A6%BE%E0%A6%B9%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B2%E0%A7%87%E0%A6%A8%E0%A6%A6%E0%A7%87%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%8F%E0%A6%AB%E0%A6%86%E0%A6%87%E0%A6%87%E0%A6%89%E0%A6%A4%E0%A7%87-%E0%A6%A6%E0%A7%81%E0%A6%A6%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%9A%E0%A6%BF%E0%A6%A0%E0%A6%BF",
-                                              "time":  "Thu, 17 Sep 2026 08:29:56 +0000"
-                                          },
-                                          {
-                                              "title":  "শ্যামনগরে জাল টাকা দিয়ে পণ্য কেনার সময় কিশোর আটক",
-                                              "url":  "https://www.asia-post.com/country-news/ap5c93hgdbql-%E0%A6%B6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE%E0%A6%A8%E0%A6%97%E0%A6%B0%E0%A7%87-%E0%A6%9C%E0%A6%BE%E0%A6%B2-%E0%A6%9F%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%A6%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AA%E0%A6%A3%E0%A7%8D%E0%A6%AF-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%AE%E0%A7%9F-%E0%A6%95%E0%A6%BF%E0%A6%B6%E0%A7%8B%E0%A6%B0-%E0%A6%86%E0%A6%9F%E0%A6%95",
-                                              "time":  "Thu, 17 Sep 2026 08:28:11 +0000"
-                                          },
-                                          {
-                                              "title":  "স্বাধীনতা মানে যা ইচ্ছে তাই লেখা যাবে না: প্রেস সচিব",
-                                              "url":  "https://www.asia-post.com/bangladesh/ap93zggb220j-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%A7%E0%A7%80%E0%A6%A8%E0%A6%A4%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A6%BE-%E0%A6%87%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%A4%E0%A6%BE%E0%A6%87-%E0%A6%B2%E0%A7%87%E0%A6%96%E0%A6%BE-%E0%A6%AF%E0%A6%BE%E0%A6%AC%E0%A7%87-%E0%A6%A8%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B8-%E0%A6%B8%E0%A6%9A%E0%A6%BF%E0%A6%AC",
-                                              "time":  "Thu, 17 Sep 2026 08:25:15 +0000"
-                                          },
-                                          {
-                                              "title":  "সৌদির সঙ্গে লড়াইয়ে সক্ষমতার জানান দিচ্ছে হুতিরা",
-                                              "url":  "https://www.asia-post.com/world/aplpci503siu-%E0%A6%B8%E0%A7%8C%E0%A6%A6%E0%A6%BF%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%B2%E0%A7%9C%E0%A6%BE%E0%A6%87%E0%A7%9F%E0%A7%87-%E0%A6%B8%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%AE%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A8-%E0%A6%A6%E0%A6%BF%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%B9%E0%A7%81%E0%A6%A4%E0%A6%BF%E0%A6%B0%E0%A6%BE",
-                                              "time":  "Thu, 17 Sep 2026 08:21:42 +0000"
-                                          },
-                                          {
-                                              "title":  "আইনজীবীর বিল ছাড়ে পেশকারের বিরুদ্ধে ঘুষ দাবির অভিযোগ",
-                                              "url":  "https://www.asia-post.com/country-news/apgwr9vnx48z-%E0%A6%86%E0%A6%87%E0%A6%A8%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A7%80%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%B2-%E0%A6%9B%E0%A6%BE%E0%A7%9C%E0%A7%87-%E0%A6%AA%E0%A7%87%E0%A6%B6%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%B0%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A7%87-%E0%A6%98%E0%A7%81%E0%A6%B7-%E0%A6%A6%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A7%87%E0%A6%BE%E0%A6%97",
-                                              "time":  "Thu, 17 Sep 2026 08:21:38 +0000"
+                                              "time":  "Thu, 17 Sep 2026 08:46:37 +0000",
+                                              "image":  "https://images.asia-post.com/original_images/homeminister-810e64-720x405.webp"
                                           }
                                       ],
                         "status":  "ok"
@@ -299,54 +349,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
-                                              "title":  "শপিং জোন বিডিতে কাস্টমসের হানা, ৮২ লাখ টাকার ভ্যাট ফাঁকির তথ্য",
-                                              "url":  "https://www.jagonews24.com/economy/news/1158195",
-                                              "time":  "Thu, 17 Sep 2026 01:51:00 GMT"
+                                              "title":  "খেলনা পিস্তল-ওয়াকিটকি নিয়ে ডিবি পরিচয়ে ডাকাতির প্রস্তুতি ...",
+                                              "url":  "https://www.jagonews24.com/national/news/1158208",
+                                              "time":  "Thu, 17 Sep 2026 02:13:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.MkffCeAS5K-4GqzTR7EVdg\u0026pid=News"
                                           },
                                           {
-                                              "title":  "একদিনেই ৫২৫ গ্রেফতার, জব্দ ইয়াবা-গাঁজা-মদ",
-                                              "url":  "https://www.jagonews24.com/national/news/1158190",
-                                              "time":  "Thu, 17 Sep 2026 01:44:00 GMT"
+                                              "title":  "ঋতুপর্ণাদের ফিরিয়েও হাফডজন গোলে হারলো বাংলাদেশ",
+                                              "url":  "https://www.jagonews24.com/sports/football/1158200",
+                                              "time":  "Thu, 17 Sep 2026 01:59:00 GMT",
+                                              "image":  ""
                                           },
                                           {
-                                              "title":  "৫ বছরের বেশি কর্মস্থলে অনুপস্থিত, উপসচিব সুমন রেজাকে চাকরিচ্যুত",
-                                              "url":  "https://www.jagonews24.com/national/news/1158060",
-                                              "time":  "Wed, 16 Sep 2026 20:07:00 GMT"
-                                          },
-                                          {
-                                              "title":  "দুর্যোগে মানুষের পাশে দাঁড়াতে বিএনসিসি ক্যাডেটদের ভূমিকা অনন্য",
-                                              "url":  "https://www.jagonews24.com/national/news/1158058",
-                                              "time":  "Wed, 16 Sep 2026 17:00:00 GMT"
+                                              "title":  "‘ভূমিদৃষ্টি’ অ্যাপ উদ্বোধন, যেভাবে নিশ্চিত হবে ভূমি অফিসের ...",
+                                              "url":  "https://www.jagonews24.com/national/news/1158143",
+                                              "time":  "Wed, 16 Sep 2026 23:38:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.c8EzltAThK29AIGjT9Mr4g\u0026pid=News"
                                           },
                                           {
                                               "title":  "‘ট্রাইব্যুনাল’ ছাড়লেন নুসরাত ফারিয়া, জানেন না নির্মাতা",
                                               "url":  "https://www.jagonews24.com/entertainment/news/1158196",
-                                              "time":  "Thu, 17 Sep 2026 01:55:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:55:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.bBHCgzsMHo2YOqBjbCEt9g\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "আসিফ মাহমুদের সম্পদ ও লেনদেনের তথ্য চেয়ে আর্থিক গোয়েন্দা ...",
+                                              "url":  "https://www.jagonews24.com/national/news/1158194",
+                                              "time":  "Thu, 17 Sep 2026 01:50:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.frUzTVPcG2Dw0pp3RlW3WQ\u0026pid=News"
                                           },
                                           {
                                               "title":  "সরকার দেশকে ফ্যাসিবাদী রাষ্ট্রের দিকে নিয়ে যাচ্ছে: ড. রেজাউল করিম",
                                               "url":  "https://www.jagonews24.com/politics/news/1158197",
-                                              "time":  "Thu, 17 Sep 2026 01:55:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:55:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.ybrPKmVD7jW3F2Firvdhog\u0026pid=News"
                                           },
                                           {
                                               "title":  "ইসরায়েলের সঙ্গে সম্পর্ক বাড়াচ্ছে মরক্কো, চালু হচ্ছে দূতাবাসও",
                                               "url":  "https://www.jagonews24.com/international/news/1158192",
-                                              "time":  "Thu, 17 Sep 2026 01:49:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:49:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.HHrSbJterSdcCE_gFSO7Rg\u0026pid=News"
                                           },
                                           {
                                               "title":  "ঢাকা বিশ্ববিদ্যালয়ে ‘ইউএস কনস্টিটিউশন ডে’ উদযাপন",
                                               "url":  "https://www.jagonews24.com/international/news/1158183",
-                                              "time":  "Thu, 17 Sep 2026 01:35:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:35:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.GmGz3_ljuRLSuer4TKPlQg\u0026pid=News"
                                           },
                                           {
-                                              "title":  "এসবিএসি ব্যাংকে ম্যানেজার নিয়োগ, ৫৫ বছর বয়সেও আবেদন",
-                                              "url":  "https://www.jagonews24.com/jago-jobs/news/1158181",
-                                              "time":  "Thu, 17 Sep 2026 01:21:00 GMT"
+                                              "title":  "শপিং জোন বিডিতে কাস্টমসের হানা, ৮২ লাখ টাকার ভ্যাট ফাঁকির তথ্য",
+                                              "url":  "https://www.jagonews24.com/economy/news/1158195",
+                                              "time":  "Thu, 17 Sep 2026 01:51:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.stSFx1NQQvHYg4ybMXqzpg\u0026pid=News"
                                           },
                                           {
-                                              "title":  "হারিয়ে যাওয়া শিশুকে খুঁজে পাওয়ার উপায় কী?",
-                                              "url":  "https://www.jagonews24.com/women-and-children/news/1158180",
-                                              "time":  "Thu, 17 Sep 2026 01:16:00 GMT"
+                                              "title":  "একদিনেই ৫২৫ গ্রেফতার, জব্দ ইয়াবা-গাঁজা-মদ",
+                                              "url":  "https://www.jagonews24.com/national/news/1158190",
+                                              "time":  "Thu, 17 Sep 2026 01:44:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.7igYW8juEVBEtcXkRBmzkw\u0026pid=News"
                                           }
                                       ],
                         "status":  "ok"
@@ -359,52 +419,62 @@
                                           {
                                               "title":  "ভারতের বিরুদ্ধে পাকিস্তানকে সাহায্য করেছিল ইরান, দাবি ইসহাক দারের",
                                               "url":  "https://www.kalerkantho.com/online/world/2026/08/27/1730977",
-                                              "time":  "Thu, 27 Aug 2026 01:48:00 GMT"
+                                              "time":  "Thu, 27 Aug 2026 01:48:00 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "ঘন ঘন সেচ দিয়েও বিপাকে চরের চাষি",
                                               "url":  "https://www.kalerkantho.com/online/country-news/2026/08/29/1731811",
-                                              "time":  "Sat, 29 Aug 2026 01:00:00 GMT"
+                                              "time":  "Sat, 29 Aug 2026 01:00:00 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "আমি এই সংসদের ভবিষ্যৎ নিয়ে চিন্তিত : স্পিকার",
                                               "url":  "https://www.kalerkantho.com/online/national/2026/08/27/1731051",
-                                              "time":  "Thu, 27 Aug 2026 05:03:00 GMT"
+                                              "time":  "Thu, 27 Aug 2026 05:03:00 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "কালের কণ্ঠ || kalerkantho - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5laTZwVXBwX3Fpd1gzWGx1clMzWFo2WExmOGZib2tITURndGk0VGlNYXJWSFpIdkxVYTJHZ0V4bFR4QQ?oc=5",
-                                              "time":  "Sat, 05 Jul 2014 11:44:40 GMT"
+                                              "time":  "Sat, 05 Jul 2014 11:44:40 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "বিনোদন - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ycjU1SzRJaUxqWUYwX1F5NTlQcGZuUUl3Z0tNWXF1OFpRR0NRSzJFek9WeU5nNzFOeUoyOW0weDRBaE5Uc21NazZhcFRIOU5vS2RqMm5wRUZURERE?oc=5",
-                                              "time":  "Sun, 14 Jan 2018 21:09:18 GMT"
+                                              "time":  "Sun, 14 Jan 2018 21:09:18 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "আজকের পত্রিকা | ম্যাগাজিন - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMiSkFVX3lxTE8wVjV6OW1WOS0tejVSOUpoQ3IxamVjMFZzLXNTTk1YSkR3bmlnN204STJKRGxEMlpleFFNbmZ4ZVBCZW5QTnJtVzhB?oc=5",
-                                              "time":  "Wed, 15 May 2019 12:07:00 GMT"
+                                              "time":  "Wed, 15 May 2019 12:07:00 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "খেলাধুলা - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ZSWZuQ0twZ2RPM2pJd0xTQ3lNQ3BHc1RxaUdIcnRXaVRCdlRfdHVnOGpGekw3aFh5NnVJOV9MbU1iT1VCS04wMFpGZ01WbGZic1E?oc=5",
-                                              "time":  "Sun, 14 Jan 2018 21:13:05 GMT"
+                                              "time":  "Sun, 14 Jan 2018 21:13:05 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "সর্বশেষ - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBVYkFrYlFsSHZrOFVsNXI3T2FOd1Q2dkJDa0FaX0RpN3Zpem8zdDZ4b1Vta1NETk9VOXBWUEJxdUExVGhZVHl2d3A3VjYwVDd4Wl9SZA?oc=5",
-                                              "time":  "Tue, 19 Nov 2024 01:05:28 GMT"
+                                              "time":  "Tue, 19 Nov 2024 01:05:28 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "‘প্রাক্তন’ই কি ওপারে সিনেমা ব্যবসার চাবিকাঠি? - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMic0FVX3lxTFBYN1VhZjlPXzZ2TDZCM2taRnhzVEdSR0ZYc2lXNERWSFNlSkRVNWJhTm94REh1YlZjX0NsWFdWZTFBcTVTcDcwMU9WUVlwQk1QTWNQQjdjdHJadlMwaVhEdFkwTGFtRFUtaXJZZ3J6d2c4bXc?oc=5",
-                                              "time":  "Wed, 16 Sep 2026 18:00:00 GMT"
+                                              "time":  "Wed, 16 Sep 2026 18:00:00 GMT",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "সংকট কাটিয়ে পোশাক খাতের রপ্তানি বৃদ্ধির ইঙ্গিত বিজিএমইএ সভাপতির - kalerkantho.com",
                                               "url":  "https://news.google.com/rss/articles/CBMicEFVX3lxTE9FUXo4c2Z5VDA5YjdCcEx3NXVMRFlaRlhlTUxxMVc5WF9KbC1Hd01Fd1ZCVzk5WjJEcEVkZUpJX0dTRi1WeFhMeTBMemxQYWFBY2M5N0tYUUQxcUlBem5jcGtEVFRPUS1sRVJfZlMyb24?oc=5",
-                                              "time":  "Thu, 17 Sep 2026 08:49:26 GMT"
+                                              "time":  "Thu, 17 Sep 2026 08:49:26 GMT",
+                                              "image":  ""
                                           }
                                       ],
                         "status":  "ok"
@@ -415,54 +485,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
+                                              "title":  "স্বপ্নে প্রায়ই খারাপ কিছু দেখেন, জানুন বাঁচার উপায়",
+                                              "url":  "https://www.jugantor.com/islam-life/1156060",
+                                              "time":  "Thu, 17 Sep 2026 02:08:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.oiSKczE-nB81lGvXKH6rrA\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "সর্বজনীন পেনশন কর্মসূচিতে ৫ বছর পর টাকা তুলে নেওয়া যাবে",
+                                              "url":  "https://www.jugantor.com/national/1156062",
+                                              "time":  "Thu, 17 Sep 2026 02:16:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.2UCSEOF5x-o094Nn0Ya8sQ\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "স্ত্রীসহ আসিফ মাহমুদের দেশ-বিদেশের সম্পদের তথ্য চাইল দুদক",
+                                              "url":  "https://www.jugantor.com/national/1156057",
+                                              "time":  "Thu, 17 Sep 2026 02:05:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.UaIUiscaxJ6eJVTAwHDxfg\u0026pid=News"
+                                          },
+                                          {
                                               "title":  "সেই এনসিপি নেত্রীকে দল থেকে অব্যাহতি",
                                               "url":  "https://www.jugantor.com/country-news/1156048",
-                                              "time":  "Thu, 17 Sep 2026 01:42:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:42:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.x_3KCZ0yOe294OKUQJqd5g\u0026pid=News"
                                           },
                                           {
                                               "title":  "মাঝ আকাশে অ্যাজমা অ্যাটাক, যাত্রীর মৃত্যু",
                                               "url":  "https://www.jugantor.com/international/1156047",
-                                              "time":  "Thu, 17 Sep 2026 01:39:00 GMT"
-                                          },
-                                          {
-                                              "title":  "ফিলিস্তিনের পক্ষে সোচ্চার মার্কিন র‌্যাপার, দান করবেন ১০ লাখ ডলার",
-                                              "url":  "https://www.jugantor.com/international/1156042",
-                                              "time":  "Thu, 17 Sep 2026 01:21:00 GMT"
-                                          },
-                                          {
-                                              "title":  "রাজশাহীতে চব্বিশ ঘণ্টায় গ্রেফতার ২৩০",
-                                              "url":  "https://www.jugantor.com/country-news/1156040",
-                                              "time":  "Thu, 17 Sep 2026 01:14:00 GMT"
-                                          },
-                                          {
-                                              "title":  "নেপালের বন্যায় সহায়তার জন্য প্রধানমন্ত্রী তারেক রহমানকে ...",
-                                              "url":  "https://www.jugantor.com/national/1156037",
-                                              "time":  "Thu, 17 Sep 2026 01:12:00 GMT"
-                                          },
-                                          {
-                                              "title":  "ইয়েমেনে সৌদি আরবের ‘উইং লুং-২’ ড্রোন ভূপাতিতের দাবি",
-                                              "url":  "https://www.jugantor.com/international/1156038",
-                                              "time":  "Thu, 17 Sep 2026 01:14:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 01:39:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.hKUdgsOyzaEc0mQy0mKyeQ\u0026pid=News"
                                           },
                                           {
                                               "title":  "সৌদির এফ-১৫ যুদ্ধবিমান ধ্বংসের ভিডিও প্রকাশ করল হুথিরা",
                                               "url":  "https://www.jugantor.com/international/1156022",
-                                              "time":  "Thu, 17 Sep 2026 00:34:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 00:34:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.FsHVfipajelryvL8AAiofQ\u0026pid=News"
+                                          },
+                                          {
+                                              "title":  "ফিলিস্তিনের পক্ষে সোচ্চার মার্কিন র‌্যাপার, দান করবেন ১০ লাখ ডলার",
+                                              "url":  "https://www.jugantor.com/international/1156042",
+                                              "time":  "Thu, 17 Sep 2026 01:21:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.1HRDOhfdUl05luVlnp_pyA\u0026pid=News"
                                           },
                                           {
                                               "title":  "যুক্তরাষ্ট্রের কংগ্রেসে রাশিয়ার বিরুদ্ধে বড় নিষেধাজ্ঞা বিল পাশ",
                                               "url":  "https://www.jugantor.com/international/1156027",
-                                              "time":  "Thu, 17 Sep 2026 00:49:00 GMT"
+                                              "time":  "Thu, 17 Sep 2026 00:49:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.O1hcwCx9dOWel15xbFKcyQ\u0026pid=News"
                                           },
                                           {
-                                              "title":  "শচীনকে পেছনে ফেলে সবার ওপরে টেইলর",
-                                              "url":  "https://www.jugantor.com/sports/1156023",
-                                              "time":  "Thu, 17 Sep 2026 00:36:00 GMT"
+                                              "title":  "রাজশাহীতে চব্বিশ ঘণ্টায় গ্রেফতার ২৩০",
+                                              "url":  "https://www.jugantor.com/country-news/1156040",
+                                              "time":  "Thu, 17 Sep 2026 01:14:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.BHLUalh9giVrOovW_ZWiXw\u0026pid=News"
                                           },
                                           {
-                                              "title":  "স্বর্ণের দাম আরও কমবে, নাকি বাড়বে?",
-                                              "url":  "https://www.jugantor.com/economics/1156024",
-                                              "time":  "Thu, 17 Sep 2026 00:38:00 GMT"
+                                              "title":  "নেপালের বন্যায় সহায়তার জন্য প্রধানমন্ত্রী তারেক রহমানকে ...",
+                                              "url":  "https://www.jugantor.com/national/1156037",
+                                              "time":  "Thu, 17 Sep 2026 01:12:00 GMT",
+                                              "image":  "http://www.bing.com/th?id=ONUT.Cj7-jwbg7ajKGstJ3eQm2A\u0026pid=News"
                                           }
                                       ],
                         "status":  "ok"
@@ -473,54 +553,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
-                                              "title":  "ক্যান্টনমেন্ট থানার ওসি রাকিবুল হাসানকে বদলি",
-                                              "url":  "https://samakal.com/capital/article/373295/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%A8%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%93%E0%A6%B8%E0%A6%BF-%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%BF%E0%A6%AC%E0%A7%81%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%A6%E0%A6%B2%E0%A6%BF",
-                                              "time":  "Thu, 17 Sep 2026 15:08:08 +0600"
+                                              "title":  "আবারও বাড়ল সিগারেটের দাম",
+                                              "url":  "https://samakal.com/economics/article/373300/%E0%A6%86%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A6%93-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%B2-%E0%A6%B8%E0%A6%BF%E0%A6%97%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A6%AE",
+                                              "time":  "Thu, 17 Sep 2026 15:31:56 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/chigarate-1789637516.jpg"
                                           },
                                           {
-                                              "title":  "মার্কিন নিষেধাজ্ঞার ঝুঁকি, তেল কেনায় বৈচিত্র্য আনবে ভারত",
-                                              "url":  "https://samakal.com/international/article/373294/%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A6%BF%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A7%87%E0%A6%A7%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%B0-%E0%A6%9D%E0%A7%81%E0%A6%81%E0%A6%95%E0%A6%BF-%E0%A6%A4%E0%A7%87%E0%A6%B2-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A7%9F-%E0%A6%AC%E0%A7%88%E0%A6%9A%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%8D%E0%A6%AF-%E0%A6%86%E0%A6%A8%E0%A6%AC%E0%A7%87-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4",
-                                              "time":  "Thu, 17 Sep 2026 14:54:07 +0600"
+                                              "title":  "মাঠ পর্যায় থেকে সিসি ক্যামেরার তথ্য চাইল ইসি",
+                                              "url":  "https://samakal.com/bangladesh/article/373299/%E0%A6%AE%E0%A6%BE%E0%A6%A0-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A7%9F-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A6%BF-%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A6%BE%E0%A6%B0-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A6%B2-%E0%A6%87%E0%A6%B8%E0%A6%BF",
+                                              "time":  "Thu, 17 Sep 2026 15:26:43 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/ce-1789637203.jpg"
+                                          },
+                                          {
+                                              "title":  "সারাদেশে আগামী পাঁচ দিন বৃষ্টির পূর্বাভাস",
+                                              "url":  "https://samakal.com/bangladesh/article/373298/%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%86%E0%A6%97%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%AA%E0%A6%BE%E0%A6%81%E0%A6%9A-%E0%A6%A6%E0%A6%BF%E0%A6%A8-%E0%A6%AC%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%B0-%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%B8",
+                                              "time":  "Thu, 17 Sep 2026 15:26:37 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/brrishtipat-1789637197.png"
+                                          },
+                                          {
+                                              "title":  "মানবপাচার প্রতিরোধে সরকার দৃঢ়প্রতিজ্ঞ: আইনমন্ত্রী",
+                                              "url":  "https://samakal.com/bangladesh/article/373297/%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%AC%E0%A6%AA%E0%A6%BE%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%B0%E0%A7%8B%E0%A6%A7%E0%A7%87-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%A6%E0%A7%83%E0%A7%9D%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%9E:-%E0%A6%86%E0%A6%87%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80",
+                                              "time":  "Thu, 17 Sep 2026 15:17:02 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/manobpachar-1789636622.jpg"
+                                          },
+                                          {
+                                              "title":  "বেদানার বীজ খাওয়া কি ঠিক?",
+                                              "url":  "https://samakal.com/lifestyle/article/373296/%E0%A6%AC%E0%A7%87%E0%A6%A6%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A7%80%E0%A6%9C-%E0%A6%96%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE-%E0%A6%95%E0%A6%BF-%E0%A6%A0%E0%A6%BF%E0%A6%95-%C2%A0",
+                                              "time":  "Thu, 17 Sep 2026 15:16:01 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/pic-3-1789636561.jpg"
+                                          },
+                                          {
+                                              "title":  "ক্যান্টনমেন্ট থানার ওসি রাকিবুল হাসানকে বদলি",
+                                              "url":  "https://samakal.com/capital/article/373295/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%A8%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%93%E0%A6%B8%E0%A6%BF-%E0%A6%B0%E0%A6%BE%E0%A6%95%E0%A6%BF%E0%A6%AC%E0%A7%81%E0%A6%B2-%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%A6%E0%A6%B2%E0%A6%BF",
+                                              "time":  "Thu, 17 Sep 2026 15:08:08 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/dmp-1789636088.jpg"
+                                          },
+                                          {
+                                              "title":  "মার্কিন নিষেধাজ্ঞার ঝুঁকি, তেল কেনায় বৈচিত্র্য ধরে রাখবে ভারত",
+                                              "url":  "https://samakal.com/international/article/373294/%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A6%BF%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A7%87%E0%A6%A7%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%B0-%E0%A6%9D%E0%A7%81%E0%A6%81%E0%A6%95%E0%A6%BF-%E0%A6%A4%E0%A7%87%E0%A6%B2-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A7%9F-%E0%A6%AC%E0%A7%88%E0%A6%9A%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%8D%E0%A6%AF-%E0%A6%A7%E0%A6%B0%E0%A7%87-%E0%A6%B0%E0%A6%BE%E0%A6%96%E0%A6%AC%E0%A7%87-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4",
+                                              "time":  "Thu, 17 Sep 2026 14:54:07 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/news-image-2026-09-17t145622268-1789635247.png"
                                           },
                                           {
                                               "title":  "ফিক্সিংকাণ্ডে বিপিএলের আরও দুই কর্মকর্তা নিষিদ্ধ",
                                               "url":  "https://samakal.com/sports/article/373293/%E0%A6%AB%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%95%E0%A6%BE%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%8F%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%B0%E0%A6%93-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A6%BF%E0%A6%A6%E0%A7%8D%E0%A6%A7",
-                                              "time":  "Thu, 17 Sep 2026 14:53:07 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:53:07 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/bpl-bcb-1789635186.jpg"
                                           },
                                           {
                                               "title":  "‘চতুর্থ ফিনা সম্পূর্ণা অ্যাওয়ার্ড ২০২৬’ অনুষ্ঠিত",
                                               "url":  "https://samakal.com/lifestyle/article/373292/%E2%80%98%E0%A6%9A%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%A5-%E0%A6%AB%E0%A6%BF%E0%A6%A8%E0%A6%BE-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3%E0%A6%BE-%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%AC%E2%80%99-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%BF%E0%A6%A4",
-                                              "time":  "Thu, 17 Sep 2026 14:52:49 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:52:49 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/pic-1-1789635169.jpg"
                                           },
                                           {
                                               "title":  "জবি ছাত্রদলের দুই গ্রুপের সংঘর্ষে আহত ৩ শিক্ষার্থী, দুই নেতাকে কারণ দর্শানোর নোটিশ",
                                               "url":  "https://samakal.com/capital/article/373291/%E0%A6%9C%E0%A6%AC%E0%A6%BF-%E0%A6%9B%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%A6%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%81%E0%A6%AA%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%82%E0%A6%98%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%86%E0%A6%B9%E0%A6%A4-%E0%A7%A9-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%A3-%E0%A6%A6%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A6%BE%E0%A6%A8%E0%A7%8B%E0%A6%B0-%E0%A6%A8%E0%A7%8B%E0%A6%9F%E0%A6%BF%E0%A6%B6",
-                                              "time":  "Thu, 17 Sep 2026 14:39:53 +0600"
-                                          },
-                                          {
-                                              "title":  "ক্যারিয়ারের নতুন অধ্যায়ে সজল",
-                                              "url":  "https://samakal.com/entertainment/article/373290/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%85%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A7%9F%E0%A7%87-%E0%A6%B8%E0%A6%9C%E0%A6%B2",
-                                              "time":  "Thu, 17 Sep 2026 14:25:52 +0600"
-                                          },
-                                          {
-                                              "title":  "মেধাবীদের সঠিক মূল্যায়নের সুফল ভবিষ্যৎ প্রজন্ম পাবে : প্রধানমন্ত্রী",
-                                              "url":  "https://samakal.com/bangladesh/article/373289/%E0%A6%AE%E0%A7%87%E0%A6%A7%E0%A6%BE%E0%A6%AC%E0%A7%80%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%A0%E0%A6%BF%E0%A6%95-%E0%A6%AE%E0%A7%82%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A7%9F%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%81%E0%A6%AB%E0%A6%B2-%E0%A6%AD%E0%A6%AC%E0%A6%BF%E0%A6%B7%E0%A7%8D%E0%A6%AF%E0%A7%8E-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AE-%E0%A6%AA%E0%A6%BE%E0%A6%AC%E0%A7%87-:-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80",
-                                              "time":  "Thu, 17 Sep 2026 14:19:47 +0600"
-                                          },
-                                          {
-                                              "title":  "পুলিশের ঊর্ধ্বতন পর্যায়ে বড় রদবদল, বদলি-পদায়ন ১১ কর্মকর্তা",
-                                              "url":  "https://samakal.com/bangladesh/article/373288/%E0%A6%AA%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%8A%E0%A6%B0%E0%A7%8D%E0%A6%A7%E0%A7%8D%E0%A6%AC%E0%A6%A4%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A7%9C-%E0%A6%B0%E0%A6%A6%E0%A6%AC%E0%A6%A6%E0%A6%B2-%E0%A6%AC%E0%A6%A6%E0%A6%B2%E0%A6%BF-%E0%A6%AA%E0%A6%A6%E0%A6%BE%E0%A7%9F%E0%A6%A8-%E0%A7%A7%E0%A7%A7-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BE",
-                                              "time":  "Thu, 17 Sep 2026 14:19:07 +0600"
-                                          },
-                                          {
-                                              "title":  "ফিলিস্তিনের পক্ষ নেওয়ায় ট্যুর থেকে বাদ, পুরো পারিশ্রমিক দান করলেন এড শিরান",
-                                              "url":  "https://samakal.com/entertainment/article/373287/%E0%A6%AB%E0%A6%BF%E0%A6%B2%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%95%E0%A7%8D%E0%A6%B7-%E0%A6%A8%E0%A7%87%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A7%9F-%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A7%81%E0%A6%B0-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%A6-%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%8B-%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%BF%E0%A6%95-%E0%A6%A6%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%8F%E0%A6%A1-%E0%A6%B6%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%A8",
-                                              "time":  "Thu, 17 Sep 2026 14:08:38 +0600"
-                                          },
-                                          {
-                                              "title":  "কানাডাকে সদস্য বানালে ইইউয়ের সঙ্গে বাণিজ্য বন্ধ করবে যুক্তরাষ্ট্র",
-                                              "url":  "https://samakal.com/international/article/373286/%E0%A6%95%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%A1%E0%A6%BE%E0%A6%95%E0%A7%87-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF-%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87-%E0%A6%87%E0%A6%87%E0%A6%89%E0%A7%9F%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%AF-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87-%E0%A6%AF%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0",
-                                              "time":  "Thu, 17 Sep 2026 13:52:01 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:39:53 +0600",
+                                              "image":  "https://samakal.com/media/imgAll/2026September/untitled-1-1789634393.jpg"
                                           }
                                       ],
                         "status":  "ok"
@@ -533,52 +623,62 @@
                                           {
                                               "title":  "ই-বেইলবন্ডে দ্রুত মুক্তি, কমেছে সময়ের অপচয় ও হয়রানি গত বছরের ১৬ অক্টোবর প্রথম নারায়ণগঞ্জ জেলায় শুরুর পর এ বছরের ১৩ অগাস্ট আরও বারোটি জেলায় এ কার্যক্রম চালু করেছে সরকার।",
                                               "url":  "https://bangla.bdnews24.com/samagrabangladesh/1bfb4d484438",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "ইউরোপে পোশাক রপ্তানি বেশি কমেছে বাংলাদেশের “আমাদের প্রতিদ্বন্দ্বী চীন ও ভিয়েতনামের কিন্তু বেড়েছে। আরও চিন্তার বিষয় যে, আমাদের সবচেয়ে বেশি কমেছে,” বলেন মহিউদ্দিন রুবেল।",
                                               "url":  "https://bangla.bdnews24.com/business/8737e566785a",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "সৌদি, হুতি পাল্টাপাল্টি হামলায় বিস্তৃত হচ্ছে পশ্চিম এশিয়ার যুদ্ধ হুতিরা রণক্ষেত্রে ইয়েমেনের সৌদি সমর্থিত জোট বাহিনীর কাছ থেকে সাঁজোয়া যান জব্দ করার ভিডিও প্রকাশ করেছে।",
                                               "url":  "https://bangla.bdnews24.com/world/8ebb96e6e1bf",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "যৌথ সীমান্ত কমিশন চালু করল চীন ও পাকিস্তান নতুন এ কমিশন গঠনের বিরোধিতা করেছে ভারত।",
                                               "url":  "https://bangla.bdnews24.com/world/ffa0cf46a83c",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "গোপালগঞ্জে শৈলদাহ নদীর ভাঙনে সড়ক বিলীন, ভোগান্তি",
                                               "url":  "https://bangla.bdnews24.com/tube/bd7a46e7b622",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "কারওয়ান বাজার থেকে কাঁচামালের আড়ত সরবে? বিকল্প ৩ বাজারের কী হাল?",
                                               "url":  "https://bangla.bdnews24.com/bangladesh/b4ef752ec11b",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "হামের ৫৯% সংক্রমণ স্বাস্থ্যসেবা কেন্দ্রে: গবেষণা",
                                               "url":  "https://bangla.bdnews24.com/health/585cb5548aad",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "ঢাবির হলে হলে ছাত্রশিবিরের সমন্বয়ক: ছাত্রনেতারা বলছেন, ‘প্রতারণার নতুন মোড়ক’",
                                               "url":  "https://bangla.bdnews24.com/campus/02373803fa50",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "মালয়েশিয়ায় সড়কে প্রাণ গেল বাংলাদেশির, চালককে খুঁজছে পুলিশ",
                                               "url":  "https://bangla.bdnews24.com/probash/b60fdf500f97",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "রাশিয়ার তেল কিনলে ভারতীয় পণ্যে ১০০% শুল্কের বিলে মার্কিন হাউজে সম্মতি",
                                               "url":  "https://bangla.bdnews24.com/world/b0543dd8fc0a",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           }
                                       ],
                         "status":  "ok"
@@ -591,52 +691,62 @@
                                           {
                                               "title":  "শেরপুর-৩ আসনের জামায়াত প্রার্থী মারা গেছেন",
                                               "url":  "https://bangla.thedailystar.net/news/saerapaura-3-asanaera-jaamaayaata-paraarathai-maaraa-gaechaena-3895481",
-                                              "time":  "Wed, 04 Feb 2026 02:43:57 +0000"
+                                              "time":  "Wed, 04 Feb 2026 02:43:57 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "মালদ্বীপের পর ভ্রমণপিপাসুদের নজরে ইন্দোনেশিয়ার যে নির্জন দ্বীপ",
                                               "url":  "https://bangla.thedailystar.net/life-living/travel/news-3960366",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "টুইন টাওয়ার হামলার ২৫ বছর, বদলে যাওয়া পৃথিবী ও মামদানি বিতর্ক",
                                               "url":  "https://bangla.thedailystar.net/analysis/news-3960286",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "ইরানকে চাপে ফেলতে চীনকে দরকার যুক্তরাষ্ট্রের, কিন্তু বেইজিং কি পাশে দাঁড়াবে?",
                                               "url":  "https://bangla.thedailystar.net/international/news-3956681",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "প্রযুক্তি ও স্টার্টআপ",
                                               "url":  "https://bangla.thedailystar.net/tech-startup",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "আমাদের সম্পর্কে",
                                               "url":  "https://bangla.thedailystar.net/node/3895441",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
+                                          },
+                                          {
+                                              "title":  "অডিও ক্লিপ ছড়িয়ে পড়ার পর ক্যান্টনমেন্ট থানার ওসি প্রত্যাহার",
+                                              "url":  "https://bangla.thedailystar.net/news/bangladesh/news-3962251",
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "খুলছে মালয়েশিয়ার শ্রমবাজার, রিক্রুটমেন্ট প্রক্রিয়ায় সিন্ডিকেটের শঙ্কা",
                                               "url":  "https://bangla.thedailystar.net/news/bangladesh/news-3962151",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
+                                          },
+                                          {
+                                              "title":  "এবার দক্ষিণ কোরিয়ার কাছে ৬ গোল হজম করল বাংলাদেশ",
+                                              "url":  "https://bangla.thedailystar.net/sports/football/news-3962256",
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "১৯৭১ সালে মুক্তিযুদ্ধে বিরোধিতা নিয়ে ক্ষমা চাওয়ার একাধিক উদ্যোগ আটকে গেছে জামায়াতের ভেতরেই",
                                               "url":  "https://bangla.thedailystar.net/news/bangladesh/politics/news-3962136",
-                                              "time":  ""
-                                          },
-                                          {
-                                              "title":  "শুক্রবার সকালে থেকে ২৪ গ্যাস থাকবে না যেসব এলাকায়",
-                                              "url":  "https://bangla.thedailystar.net/environment/natural-resources/electricity-fuel/news-3962246",
-                                              "time":  ""
-                                          },
-                                          {
-                                              "title":  "সৌদি আরবে কোরআন প্রতিযোগিতায় বিজয়ী ৪ হাফেজকে সংবর্ধনা দিলেন প্রধানমন্ত্রী",
-                                              "url":  "https://bangla.thedailystar.net/news/bangladesh/news-3962231",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           }
                                       ],
                         "status":  "ok"
@@ -649,52 +759,62 @@
                                           {
                                               "title":  "সংসদ ভবন এলাকায় \u0027জুলাই যোদ্ধাদের\u0027 সঙ্গে পুলিশের ধাওয়া-পাল্টা ধাওয়া, গাড়ি ভাঙচুর-সড়কে আগুন",
                                               "url":  "https://www.tbsnews.net/bangla/bangladesh/news-details-402331",
-                                              "time":  "Fri, 17 Oct 2025 06:20:00 +0000"
+                                              "time":  "Fri, 17 Oct 2025 06:20:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "ব্রিটিশ আমলে শুরু যার, এখনো সগৌরবে টিকে আছে ঢাকার সেই কল্যাণী আলতা!",
                                               "url":  "https://www.tbsnews.net/bangla/feature/news-details-382316",
-                                              "time":  "Wed, 27 Aug 2025 16:50:00 +0000"
+                                              "time":  "Wed, 27 Aug 2025 16:50:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "১০০ বছরে লাইকা: ছোট্ট এক জার্মান ক্যামেরা যেভাবে চিরতরে বদলে দিয়েছিল ফটোগ্রাফির ইতিহাস",
                                               "url":  "https://www.tbsnews.net/bangla/international/news-details-372781",
-                                              "time":  "Sat, 23 Aug 2025 14:05:00 +0000"
+                                              "time":  "Sat, 23 Aug 2025 14:05:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "এক সময়ের টেক জায়ান্ট জাপান কেন এখনও ফ্যাক্স মেশিন আর হানকো সিলের যুগে আটকে আছে?",
                                               "url":  "https://www.tbsnews.net/bangla/international/news-details-375616",
-                                              "time":  "Tue, 12 Aug 2025 09:55:00 +0000"
+                                              "time":  "Tue, 12 Aug 2025 09:55:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "বঙ্গোপসাগরে বিলুপ্তির ঝুঁকিতে হাঙ্গর : সুরক্ষা শুধু কাগজে-কলমে",
                                               "url":  "https://www.tbsnews.net/bangla/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6/news-details-90486",
-                                              "time":  "Tue, 19 Apr 2022 13:00:00 +0000"
+                                              "time":  "Tue, 19 Apr 2022 13:00:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "চাঁদে ৮০০ কোটি মানুষ ১ লাখ বছর থাকতে পারবে, তবে...",
                                               "url":  "https://www.tbsnews.net/bangla/%E0%A6%AB%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B0/%E0%A6%9A%E0%A6%BE%E0%A6%81%E0%A6%A6%E0%A7%87-%E0%A7%AE%E0%A7%A6%E0%A7%A6-%E0%A6%95%E0%A7%8B%E0%A6%9F%E0%A6%BF-%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A6%B7-%E0%A7%A7-%E0%A6%B2%E0%A6%BE%E0%A6%96-%E0%A6%AC%E0%A6%9B%E0%A6%B0-%E0%A6%A5%E0%A6%BE%E0%A6%95%E0%A6%A4%E0%A7%87-%E0%A6%AA%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A7%87-%E0%A6%A4%E0%A6%AC%E0%A7%87",
-                                              "time":  "Sun, 21 Nov 2021 09:45:00 +0000"
+                                              "time":  "Sun, 21 Nov 2021 09:45:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "রায়েন্দা-মাছু রুটে চালু হলো ফেরি, স্থানীয়দের উচ্ছ্বাস",
                                               "url":  "https://www.tbsnews.net/bangla/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6/%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%9B%E0%A7%81-%E0%A6%B0%E0%A7%81%E0%A6%9F%E0%A7%87-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A7%81-%E0%A6%B9%E0%A6%B2%E0%A7%8B-%E0%A6%AB%E0%A7%87%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A7%80%E0%A7%9F%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%89%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8",
-                                              "time":  "Wed, 10 Nov 2021 12:55:00 +0000"
+                                              "time":  "Wed, 10 Nov 2021 12:55:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "প্যারিসে মারা গেছেন ইরানের সাবেক প্রেসিডেন্ট বনি সদর",
                                               "url":  "https://www.tbsnews.net/bangla/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95/%E0%A6%AA%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A7%87-%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%BE-%E0%A6%97%E0%A7%87%E0%A6%9B%E0%A7%87%E0%A6%A8-%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%95-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B8%E0%A6%BF%E0%A6%A1%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F-%E0%A6%AC%E0%A6%A8%E0%A6%BF-%E0%A6%B8%E0%A6%A6%E0%A6%B0",
-                                              "time":  "Sat, 09 Oct 2021 11:15:00 +0000"
+                                              "time":  "Sat, 09 Oct 2021 11:15:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "‘মানুষকে বড় বেশি বিশ্বাস করতেন বলেই তিনি বিশ্বাসঘাতকতার শিকার হয়েছিলেন’",
                                               "url":  "https://www.tbsnews.net/bangla/%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%A6%E0%A6%A8/%E2%80%98%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A6%B7%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A7%9C-%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8-%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%E0%A6%A8-%E0%A6%AC%E0%A6%B2%E0%A7%87%E0%A6%87-%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%98%E0%A6%BE%E0%A6%A4%E0%A6%95%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A7%9F%E0%A7%87%E0%A6%9B%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%A8%E2%80%99",
-                                              "time":  "Wed, 08 Sep 2021 10:50:00 +0000"
+                                              "time":  "Wed, 08 Sep 2021 10:50:00 +0000",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "চাকরি বদলে সৌদিতে নিয়োগদাতার অনুমতি না লাগলেও মানতে হবে ৮ শর্ত",
                                               "url":  "https://www.tbsnews.net/bangla/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95/%E0%A6%9A%E0%A6%BE%E0%A6%95%E0%A6%B0%E0%A6%BF-%E0%A6%AC%E0%A6%A6%E0%A6%B2%E0%A7%87-%E0%A6%B8%E0%A7%8C%E0%A6%A6%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%8B%E0%A6%97%E0%A6%A6%E0%A6%BE%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%AE%E0%A6%A4%E0%A6%BF-%E0%A6%A8%E0%A6%BE-%E0%A6%B2%E0%A6%BE%E0%A6%97%E0%A6%B2%E0%A7%87%E0%A6%93%C2%A0%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A7%AE-%E0%A6%B6%E0%A6%B0%E0%A7%8D%E0%A6%A4",
-                                              "time":  "Tue, 17 Nov 2020 03:10:00 +0000"
+                                              "time":  "Tue, 17 Nov 2020 03:10:00 +0000",
+                                              "image":  ""
                                           }
                                       ],
                         "status":  "ok"
@@ -705,54 +825,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
+                                              "title":  "কালো উইকেটে প্রস্তুতি লিটন-শান্তদের",
+                                              "url":  "https://www.ittefaq.com.bd/810107/%E0%A6%95%E0%A6%BE%E0%A6%B2%E0%A7%8B-%E0%A6%89%E0%A6%87%E0%A6%95%E0%A7%87%E0%A6%9F%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%81%E0%A6%A4%E0%A6%BF-%E0%A6%B2%E0%A6%BF%E0%A6%9F%E0%A6%A8-%E0%A6%B6%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%A6%E0%A7%87%E0%A6%B0",
+                                              "time":  "Thu, 17 Sep 2026 15:34:10 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/053df8049fe22c7c7300aa15048d4676-6aabb3ee244b2.png?jadewits_media_id=311543"
+                                          },
+                                          {
+                                              "title":  "গুলশান-ধানমণ্ডি- নিকেতন লেকের দূষণ রোধে সমন্বিত উদ্যোগের নির্দেশ প্রধানমন্ত্রীর",
+                                              "url":  "https://www.ittefaq.com.bd/810106/%E0%A6%97%E0%A7%81%E0%A6%B2%E0%A6%B6%E0%A6%BE%E0%A6%A8-%E0%A6%A7%E0%A6%BE%E0%A6%A8%E0%A6%AE%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A6%BF-%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%A4%E0%A6%A8-%E0%A6%B2%E0%A7%87%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%82%E0%A6%B7%E0%A6%A3-%E0%A6%B0%E0%A7%8B%E0%A6%A7%E0%A7%87-%E0%A6%B8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A4",
+                                              "time":  "Thu, 17 Sep 2026 15:10:18 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/65fda07d2c227e9ade5fa30b23eaa95d-6aabae51b4ebe.jpg?jadewits_media_id=311542"
+                                          },
+                                          {
                                               "title":  "বাংলাদেশিদের জন্য সপ্তাহে ৭টি ঢাকা-মালদ্বীপ সরাসরি ফ্লাইট",
                                               "url":  "https://www.ittefaq.com.bd/810105/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%B8%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B9%E0%A7%87-%E0%A7%AD%E0%A6%9F%E0%A6%BF-%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A7%80%E0%A6%AA-%E0%A6%B8%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A6%B0%E0%A6%BF",
-                                              "time":  "Thu, 17 Sep 2026 15:05:59 +0600"
+                                              "time":  "Thu, 17 Sep 2026 15:05:59 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/ed107499490b4b7cd27300bdd7f27a55-6aabad30b2e1d.jpg?jadewits_media_id=311541"
                                           },
                                           {
                                               "title":  "মক্কার আকাশে হুতিদের ড্রোন হামলার ভিডিওটি এক বছর আগের",
                                               "url":  "https://www.ittefaq.com.bd/810104/%E0%A6%AE%E0%A6%95%E0%A7%8D%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%86%E0%A6%95%E0%A6%BE%E0%A6%B6%E0%A7%87-%E0%A6%B9%E0%A7%81%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%A1%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%A8-%E0%A6%B9%E0%A6%BE%E0%A6%AE%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93%E0%A6%9F%E0%A6%BF-%E0%A6%8F%E0%A6%95-%E0%A6%AC%E0%A6%9B%E0%A6%B0",
-                                              "time":  "Thu, 17 Sep 2026 15:05:07 +0600"
+                                              "time":  "Thu, 17 Sep 2026 15:27:58 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/de58966bc81fcc2d60921ad1af5192db-6aabaaa0c02d4.jpg?jadewits_media_id=311538"
                                           },
                                           {
                                               "title":  "গরম ডাল ছুড়ে স্ত্রীর মুখ ঝলসানোর পর তালাক, মামলায় স্বামী কারাগারে",
                                               "url":  "https://www.ittefaq.com.bd/810103/%E0%A6%97%E0%A6%B0%E0%A6%AE-%E0%A6%A1%E0%A6%BE%E0%A6%B2-%E0%A6%9B%E0%A7%81%E0%A7%9C%E0%A7%87-%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%AE%E0%A7%81%E0%A6%96-%E0%A6%9D%E0%A6%B2%E0%A6%B8%E0%A6%BE%E0%A6%A8%E0%A7%8B%E0%A6%B0-%E0%A6%AA%E0%A6%B0-%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%95-%E0%A6%AE%E0%A6%BE%E0%A6%AE%E0%A6%B2%E0%A6%BE%E0%A7%9F",
-                                              "time":  "Thu, 17 Sep 2026 14:47:24 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:47:24 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/6ffe18e91e0b375d82a4024e90d1e27c-6aaba82e94167.jpg?jadewits_media_id=311536"
                                           },
                                           {
                                               "title":  "এসআরবি নামে যাত্রা শুরু করল র‍্যাব, অপরিবর্তিত লোগোর নকশা",
                                               "url":  "https://www.ittefaq.com.bd/810102/%E0%A6%8F%E0%A6%B8%E0%A6%86%E0%A6%B0%E0%A6%AC%E0%A6%BF-%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A7%87-%E0%A6%AF%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BE-%E0%A6%B6%E0%A7%81%E0%A6%B0%E0%A7%81-%E0%A6%95%E0%A6%B0%E0%A6%B2-%E0%A6%B0%E2%80%8D%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AC-%E0%A6%85%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%A4",
-                                              "time":  "Thu, 17 Sep 2026 14:45:58 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:45:58 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/4f7f5322bea701921c5e3b420460bfe0-6aaba8af5edfe.jpg?jadewits_media_id=311537"
                                           },
                                           {
                                               "title":  "১১ দলের শান্তিপূর্ণ কর্মসূচিতে কোনো বিশৃঙ্খলা চাই না: গোলাম পরওয়ার",
                                               "url":  "https://www.ittefaq.com.bd/810101/%E0%A7%A7%E0%A7%A7-%E0%A6%A6%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%B6%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%A3-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%95%E0%A7%8B%E0%A6%A8%E0%A7%8B-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%83%E0%A6%99%E0%A7%8D%E0%A6%96%E0%A6%B2%E0%A6%BE-%E0%A6%9A%E0%A6%BE%E0%A6%87",
-                                              "time":  "Thu, 17 Sep 2026 14:45:39 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:45:39 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/6e0591c1e34e999eba7f88a1aaa8336c-6aaba82c0c357.jpg?jadewits_media_id=311535"
                                           },
                                           {
                                               "title":  "স্ত্রীসহ আসিফ মাহমুদের তথ্য ও নথি চেয়ে বিএফআইইউকে দুদকের চিঠি",
                                               "url":  "https://www.ittefaq.com.bd/810100/%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%B8%E0%A6%B9-%E0%A6%86%E0%A6%B8%E0%A6%BF%E0%A6%AB-%E0%A6%AE%E0%A6%BE%E0%A6%B9%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF-%E0%A6%93-%E0%A6%A8%E0%A6%A5%E0%A6%BF-%E0%A6%9A%E0%A7%87%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%8F%E0%A6%AB%E0%A6%86%E0%A6%87%E0%A6%87%E0%A6%89%E0%A6%95%E0%A7%87",
-                                              "time":  "Thu, 17 Sep 2026 14:44:52 +0600"
+                                              "time":  "Thu, 17 Sep 2026 15:22:04 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/cdaed206aeb6a99b2f293f7c6c472bd8-6aaba82be818e.jpg?jadewits_media_id=311534"
                                           },
                                           {
                                               "title":  "মেডিকেল ভিসায় ভারতে যাওয়ার পথে আওয়ামী লীগ নেতা আটক",
                                               "url":  "https://www.ittefaq.com.bd/810099/%E0%A6%AE%E0%A7%87%E0%A6%A1%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B2-%E0%A6%AD%E0%A6%BF%E0%A6%B8%E0%A6%BE%E0%A7%9F-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%87-%E0%A6%AF%E0%A6%BE%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A6%A5%E0%A7%87-%E0%A6%86%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%B2%E0%A7%80%E0%A6%97-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE-%E0%A6%86%E0%A6%9F%E0%A6%95",
-                                              "time":  "Thu, 17 Sep 2026 14:28:55 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:28:55 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/637131579c1ce4eaaea3a4b099d8c9a9-6aaba40b40b4f.jpg?jadewits_media_id=311533"
                                           },
                                           {
                                               "title":  "‘আপনারা যে পুরস্কারটা জিতে এসেছেন, এটা বাংলাদেশের সব মুসলমানের অর্জন’",
                                               "url":  "https://www.ittefaq.com.bd/810098/%E2%80%98%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A6%B0%E0%A6%BE-%E0%A6%AE%E0%A7%87%E0%A6%A7%E0%A6%BE-%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A7%8D%E0%A6%AF%E0%A6%A4%E0%A6%BE-%E0%A6%A6%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AD%E0%A6%BE%E0%A6%B2%E0%A7%8B-%E0%A6%95%E0%A6%BF%E0%A6%9B%E0%A7%81-%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%A8%E0%A7%87",
-                                              "time":  "Thu, 17 Sep 2026 14:26:15 +0600"
-                                          },
-                                          {
-                                              "title":  "দেশের সন্তানদের ভালো অর্জনের স্বীকৃতি দেবে সরকার: প্রধানমন্ত্রী",
-                                              "url":  "https://www.ittefaq.com.bd/810097/%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A8%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AD%E0%A6%BE%E0%A6%B2%E0%A7%8B-%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A7%80%E0%A6%95%E0%A7%83%E0%A6%A4%E0%A6%BF-%E0%A6%A6%E0%A7%87%E0%A6%AC%E0%A7%87-%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0",
-                                              "time":  "Thu, 17 Sep 2026 14:20:06 +0600"
-                                          },
-                                          {
-                                              "title":  "রাশিয়ার জ্বালানি-প্রতিরক্ষা খাতে কঠোর নিষেধাজ্ঞা বিল পাস যুক্তরাষ্ট্রের কংগ্রেসে",
-                                              "url":  "https://www.ittefaq.com.bd/810096/%E0%A6%B0%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%A8%E0%A6%BF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%B0%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%96%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%95%E0%A6%A0%E0%A7%8B%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A7%87%E0%A6%A7%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE",
-                                              "time":  "Thu, 17 Sep 2026 14:18:30 +0600"
+                                              "time":  "Thu, 17 Sep 2026 14:26:15 +0600",
+                                              "image":  "https://cdn.ittefaqbd.com/contents/cache/images/300x300x1/uploads/media/2026/09/17/33346dce5eda1dc7e4d53afe58039e63-6aaba2b3b13e1.jpg?jadewits_media_id=311532"
                                           }
                                       ],
                         "status":  "ok"
@@ -765,52 +895,62 @@
                                           {
                                               "title":  "বন্ধ থাকা চার পাটকল চালু, কর্মসংস্থান হচ্ছে ১৫ হাজার শ্রমিকের",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109643/বন্ধ-থাকা-চার-পাটকল-চালু-কর্মসংস্থান-হচ্ছে-১৫",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "ডেঙ্গু পরিস্থিতির অবনতি, সেপ্টেম্বরে ১৬ দিনেই ৭৪ মৃত্যু",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109626/ডেঙ্গু-পরিস্থিতির-অবনতি-সেপ্টেম্বরে-১৬-দিনেই-৭৪",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "‘নৌকা’ প্রতীক স্থগিত, একক প্রার্থীর আসনে যুক্ত হলো ‘না’ ভোট",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109644/‘নৌকা’-প্রতীক-স্থগিত-একক-প্রার্থীর-আসনে-যুক্ত-হলো",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "রাতের কৃত্রিম আলো কি বাড়িয়ে দিচ্ছে এডিস মশার কামড়ের সময়?",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109627/রাতের-কৃত্রিম-আলো-কি-বাড়িয়ে-দিচ্ছে-এডিস-মশার",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "স্কুলে ভর্তি হলেও বড় ঘাটতি, ১০ শিশুর ৬ জনই গণিতে দুর্বল",
                                               "url":  "https://bangla.dhakatribune.com/education/109628/স্কুলে-ভর্তি-হলেও-বড়-ঘাটতি-১০-শিশুর-৬-জনই-গণিতে",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "মোটরসাইকেল থেকে ছিটকে পড়ে দুই বাসের চাপায় মাইলস্টোনের শিক্ষিকার মৃত্যু",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109634/মোটরসাইকেল-থেকে-ছিটকে-পড়ে-দুই-বাসের-চাপায়",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "দুর্ঘটনার কবলে হেফাজতে আমিরের মাইক্রোবাস",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109636/দুর্ঘটনার-কবলে-হেফাজতে-আমিরের-মাইক্রোবাস",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "মায়ের ছুরিকাঘাতে তিন বছরের শিশুর মৃত্যু",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109638/মায়ের-ছুরিকাঘাতে-তিন-বছরের-শিশুর-মৃত্যু",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "আগস্টে যুক্তরাষ্ট্রের বাজারে পোশাক রপ্তানিতে রেকর্ড",
                                               "url":  "https://bangla.dhakatribune.com/bangladesh/109630/আগস্টে-যুক্তরাষ্ট্রের-বাজারে-পোশাক-রপ্তানিতে",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           },
                                           {
                                               "title":  "মায়ামির হয়ে মেসির শততম গোল, সঙ্গে ক্যাম্পিওনেস কাপ",
                                               "url":  "https://bangla.dhakatribune.com/sport/109633/মায়ামির-হয়ে-মেসির-শততম-গোল-সঙ্গে-ক্যাম্পিওনেস-কাপ",
-                                              "time":  ""
+                                              "time":  "",
+                                              "image":  ""
                                           }
                                       ],
                         "status":  "ok"
@@ -821,54 +961,64 @@
                         "count":  10,
                         "headlines":  [
                                           {
+                                              "title":  "আইসিসিবিতে ইন্টারন্যাশনাল সিকিউরিটি অ্যান্ড সেফটি এক্সপো শুরু",
+                                              "url":  "https://www.banglanews24.com/news/1681087",
+                                              "time":  "Thu, 17 Sep 2026 15:30:25",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789637424-f3ccdd27d2000e3f9255a7e3e2c48800.jpg"
+                                          },
+                                          {
+                                              "title":  "শেখ হাসিনার অডিও ইস্যুতে ক্যান্টনমেন্টের ওসি প্রত্যাহার",
+                                              "url":  "https://www.banglanews24.com/news/1681086",
+                                              "time":  "Thu, 17 Sep 2026 15:28:19",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789637298-a4a2c22c85451e94294fac2ec87c48c2.jpg"
+                                          },
+                                          {
+                                              "title":  "ভেজালমুক্ত পণ্য নিশ্চিত করতে শক্তিশালী হচ্ছে ভোক্তা অধিকার অধিদপ্তর",
+                                              "url":  "https://www.banglanews24.com/news/1681085",
+                                              "time":  "Thu, 17 Sep 2026 15:27:10",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789637229-31526dbfaacb3855a42450ec3fd900c4.jpg"
+                                          },
+                                          {
+                                              "title":  "ফরিদপুরে পুত্রবধূকে ধর্ষণের দায়ে শ্বশুরের যাবজ্জীবন",
+                                              "url":  "https://www.banglanews24.com/news/1681084",
+                                              "time":  "Thu, 17 Sep 2026 15:22:28",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636947-848a94e451c31a3cf8e9010722e35ef6.jpg"
+                                          },
+                                          {
+                                              "title":  "আসিফ মাহমুদের বিদেশযাত্রায় নিষেধাজ্ঞা চাওয়ার প্রস্তুতি দুদকের",
+                                              "url":  "https://www.banglanews24.com/news/1681083",
+                                              "time":  "Thu, 17 Sep 2026 15:17:12",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636632-4739a97459347be3275df9f785ab83ff.jpg"
+                                          },
+                                          {
+                                              "title":  "গুলশান-ধানমন্ডি-নিকেতন লেকের দূষণ রোধে সমন্বিত উদ্যোগ নেওয়ার নির্দেশ",
+                                              "url":  "https://www.banglanews24.com/news/1681082",
+                                              "time":  "Thu, 17 Sep 2026 15:15:13",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636512-6ef1be1ab976e1e0c5179217693e3aae.jpg"
+                                          },
+                                          {
+                                              "title":  "স্থানীয় নির্বাচন: ভোটকেন্দ্রের অচল সিসি ক্যামেরা সচলের নির্দেশ ইসির",
+                                              "url":  "https://www.banglanews24.com/news/1681081",
+                                              "time":  "Thu, 17 Sep 2026 15:13:40",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636419-31526dbfaacb3855a42450ec3fd900c4.jpg"
+                                          },
+                                          {
+                                              "title":  "‘ব্যাচেলর পয়েন্ট’-এর জাকিরের আপত্তিকর ভিডিও ভাইরাল",
+                                              "url":  "https://www.banglanews24.com/news/1681080",
+                                              "time":  "Thu, 17 Sep 2026 15:12:42",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636361-c37e408ec6a7bf3b5236fc3411e42e5c.jfif"
+                                          },
+                                          {
+                                              "title":  "বন্যার পরও পর্যটকদের জন্য উন্মুক্ত নেপাল: রাষ্ট্রদূত",
+                                              "url":  "https://www.banglanews24.com/news/1681079",
+                                              "time":  "Thu, 17 Sep 2026 15:10:25",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636224-d5281bfdbeeef89be91855d6a382ab18.jpg"
+                                          },
+                                          {
                                               "title":  "রুপনার লড়াইয়ের পরও দক্ষিণ কোরিয়ার কাছে ৬-০ গোলে বিধ্বস্ত বাংলাদেশ",
                                               "url":  "https://www.banglanews24.com/news/1681078",
-                                              "time":  "Thu, 17 Sep 2026 15:09:10"
-                                          },
-                                          {
-                                              "title":  "ধানমন্ডির দুই মাঠ উন্নয়নে দুই মন্ত্রণালয়ের চুক্তি",
-                                              "url":  "https://www.banglanews24.com/news/1681077",
-                                              "time":  "Thu, 17 Sep 2026 15:05:16"
-                                          },
-                                          {
-                                              "title":  "রাশিয়ার বিরুদ্ধে যুক্তরাষ্ট্রের বড় নিষেধাজ্ঞা",
-                                              "url":  "https://www.banglanews24.com/news/1681076",
-                                              "time":  "Thu, 17 Sep 2026 14:58:31"
-                                          },
-                                          {
-                                              "title":  "প্রাণ-আরএফএলের কারখানা ঘুরে দেখলেন ব্রিটিশ হাইকমিশনার",
-                                              "url":  "https://www.banglanews24.com/news/1681075",
-                                              "time":  "Thu, 17 Sep 2026 14:58:22"
-                                          },
-                                          {
-                                              "title":  "স্থানীয় ভোট নিয়ে আন্তঃমন্ত্রণালয় বৈঠকে ইসি",
-                                              "url":  "https://www.banglanews24.com/news/1681074",
-                                              "time":  "Thu, 17 Sep 2026 14:55:25"
-                                          },
-                                          {
-                                              "title":  "কণ্ঠশিল্পী সালমার বাবা মারা গেছেন",
-                                              "url":  "https://www.banglanews24.com/news/1681073",
-                                              "time":  "Thu, 17 Sep 2026 14:54:31"
-                                          },
-                                          {
-                                              "title":  "হবিগঞ্জে বজ্রপাতে কৃষকের মৃত্যু",
-                                              "url":  "https://www.banglanews24.com/news/1681072",
-                                              "time":  "Thu, 17 Sep 2026 14:53:56"
-                                          },
-                                          {
-                                              "title":  "ভারতে যাওয়ার পথে দর্শনা ইমিগ্রেশনে মেহেরপুর জেলা আ. লীগের সাধারণ সম্পাদক",
-                                              "url":  "https://www.banglanews24.com/news/1681071",
-                                              "time":  "Thu, 17 Sep 2026 14:51:45"
-                                          },
-                                          {
-                                              "title":  "চায়ের আড্ডাতেও সংবিধান নিয়ে আলোচনা হয়: আইনমন্ত্রী",
-                                              "url":  "https://www.banglanews24.com/news/1681070",
-                                              "time":  "Thu, 17 Sep 2026 14:49:33"
-                                          },
-                                          {
-                                              "title":  "মাদারীপুরে ইয়াবাসহ যুবক আটক",
-                                              "url":  "https://www.banglanews24.com/news/1681069",
-                                              "time":  "Thu, 17 Sep 2026 14:49:04"
+                                              "time":  "Thu, 17 Sep 2026 15:09:10",
+                                              "image":  "https://bn-cdn.banglanews24.com/public/news_images/2026/09/17/thumbnail/1789636149-a042daebb57a8f2f304332deacfda27e.png"
                                           }
                                       ],
                         "status":  "ok"

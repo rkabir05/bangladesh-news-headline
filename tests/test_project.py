@@ -53,6 +53,12 @@ def test_headline_schema():
             assert item["title"]
             assert item["url"].startswith("http")
             assert "bing.com/news/apiclick" not in item["url"]  # redirects resolved
+            # Thumbnails (optional) must be absolute image URLs from enclosures/media tags.
+            image = item.get("image", "")
+            if image:
+                assert image.startswith("http")
+                path = image.lower().split("?")[0]
+                assert path.endswith((".jpg", ".jpeg", ".png", ".webp", ".gif")) or ".akamaized.net" in image
 
 
 def test_no_duplicate_source_names():

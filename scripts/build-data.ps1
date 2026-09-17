@@ -68,7 +68,7 @@ function Get-GNewsItems([string]$site, [string]$pattern) {
                 try { $l = (New-Object Uri((New-Object Uri $site), $l)).ToString() } catch { continue }
             }
             if (-not (Test-ArticleUrlAllowGnews $l $pattern)) { continue }
-            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d) }
+            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d); image = (Get-Thumb $block) }
         }
     } catch {
         Write-Host ("  gnews fail: {0}" -f $_.Exception.Message)
@@ -78,6 +78,26 @@ function Get-GNewsItems([string]$site, [string]$pattern) {
         if ($null -ne $i -and $i.url -and -not $seen.ContainsKey($i.url)) { $seen[$i.url] = $true; $out += $i }
     }
     return $out
+}
+
+# Extract a thumbnail image URL from RSS enclosure / media tags, else the
+# item's description HTML. Generic media:content without type/medium may very
+# rarely pick a video URL; acceptable tradeoff for a thumbnail hint.
+function Get-Thumb([string]$block) {
+    $m = [regex]::Match($block, '<enclosure\b[^>]*url="([^"]+)"[^>]*type="image[^"]*"')
+    if (-not $m.Success) { $m = [regex]::Match($block, '<enclosure\b[^>]*type="image[^"]*"[^>]*url="([^"]+)"') }
+    if (-not $m.Success) { $m = [regex]::Match($block, '<enclosure\b[^>]*url="([^"]+)"') }
+    if (-not $m.Success) { $m = [regex]::Match($block, '<media:thumbnail\b[^>]*url="([^"]+)"') }
+    if (-not $m.Success) { $m = [regex]::Match($block, '<media:content\b[^>]*url="([^"]+)"[^>]*medium="image"') }
+    if (-not $m.Success) { $m = [regex]::Match($block, '<media:content\b[^>]*type="image/[^"]*"[^>]*url="([^"]+)"') }
+    if (-not $m.Success) { $m = [regex]::Match($block, '<media:content\b[^>]*url="([^"]+)"') }
+    # Bing News RSS carries thumbnails in its News:Image extension.
+    if (-not $m.Success) { $m = [regex]::Match($block, '<News:Image>\s*(.*?)\s*</News:Image>', 'Singleline') }
+    if (-not $m.Success) { $m = [regex]::Match($block, '<img\b[^>]*\bsrc="(http[^"]+)"', 'IgnoreCase') }
+    if (-not $m.Success) { return '' }
+    $u = [System.Net.WebUtility]::HtmlDecode($m.Groups[1].Value).Trim()
+    if ($u -notmatch '^https?://') { return '' }
+    return $u
 }
 
 function Resolve-BingRedirect([string]$url) {
@@ -111,7 +131,7 @@ function Get-FeedItems([string]$feedUrl, [string]$site, [string]$pattern) {
                 try { $l = (New-Object Uri((New-Object Uri $site), $l)).ToString() } catch { continue }
             }
             if (-not (Test-ArticleUrl $l $pattern)) { continue }
-            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d) }
+            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d); image = (Get-Thumb $block) }
         }
     } catch {
         Write-Host ("  feed fail: {0}" -f $_.Exception.Message)
@@ -137,7 +157,7 @@ function Get-PageItems([string]$pageUrl, [string]$site, [string]$pattern) {
             }
             if ($href -notmatch '^https?://') { continue }
             if (-not (Test-ArticleUrl $href $pattern)) { continue }
-            $items += [pscustomobject]@{ title = $text; url = $href; time = '' }
+            $items += [pscustomobject]@{ title = $text; url = $href; time = ''; image = '' }
         }
     } catch {
         Write-Host ("  page fail {0}: {1}" -f $pageUrl, $_.Exception.Message)

@@ -48,8 +48,11 @@ function paintCards(sources) {
           ${(site.headlines || []).map(item => `
             <li>
               <a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
-                ${esc(item.title)}
-                ${item.time ? `<span class="headline-time">${esc(formatDate(item.time))}</span>` : ""}
+                ${item.image ? `<img class="headline-thumb" src="${esc(item.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+                <span class="headline-body">
+                  ${esc(item.title)}
+                  ${item.time ? `<span class="headline-time">${esc(formatDate(item.time))}</span>` : ""}
+                </span>
               </a>
             </li>
           `).join("") || `<li class="p-3 small text-secondary">কোনো শিরোনাম পাওয়া যায়নি</li>`}
