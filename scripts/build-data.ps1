@@ -30,7 +30,57 @@ function Clean-Text([string]$s) {
     if (-not $s) { return '' }
     $t = $s -replace '<[^>]+>', ' '
     $t = [System.Net.WebUtility]::HtmlDecode($t)
-    return ($t -replace '\s+', ' ').Trim()
+    $t = ($t -replace '\s+', ' ').Trim()
+    return ($t -replace '^[•·▪\u2022\u00b7\u25aa\u25e6\-–]\s+', '').Trim()
+}
+
+function ConvertTo-IsoTime([string]$raw) {
+    $raw = ($raw -as [string]).Trim()
+    if (-not $raw) { return '' }
+    $dt = [datetime]::MinValue
+    if ([datetime]::TryParseExact($raw, 'R', [Globalization.CultureInfo]::InvariantCulture, 'AllowWhiteSpaces, AssumeUniversal, AdjustToUniversal', [ref]$dt)) { return $dt.ToString("yyyy-MM-ddTHH:mm:ssK") }
+    if ([datetime]::TryParse($raw, [Globalization.CultureInfo]::InvariantCulture, 'AllowWhiteSpaces, AssumeUniversal, AdjustToUniversal', [ref]$dt)) { return $dt.ToString("yyyy-MM-ddTHH:mm:ssK") }
+    return ''
+}
+
+function Get-TimeFromUrl([string]$url) {
+    if ($url -match '(20\d{2})[-/](\d{1,2})[-/](\d{1,2})') {
+        try { return [datetime]::new([int]$matches[1], [int]$matches[2], [int]$matches[3], 0, 0, 0, 'Utc').ToString('yyyy-MM-ddT00:00:00Z') } catch { return '' }
+    }
+    return ''
+}
+
+function Remove-PublisherSuffix([string]$title) {
+    return ($title -replace '\s+-\s+[A-Za-z][A-Za-z0-9 .&\-]{1,40}\s*$', '').Trim()
+}
+
+function Test-JunkTitle([string]$title) {
+    $low = $title.ToLowerInvariant()
+    return (
+        $low.Contains('tag related all news') -or
+        $title.Contains(' - আর্কাইভ') -or
+        $low.Contains(' - archive') -or
+        $low.StartsWith('bdnews24.com ')
+    )
+}
+
+function Test-Fresh([string]$isoTime, [int]$maxAgeDays = 3) {
+    if (-not $isoTime) { return $true }
+    $dt = [datetime]::MinValue
+    if (-not [datetime]::TryParse($isoTime, [Globalization.CultureInfo]::InvariantCulture, 'AllowWhiteSpaces, AssumeUniversal, AdjustToUniversal', [ref]$dt)) { return $true }
+    return ($dt -ge [datetime]::UtcNow.AddDays(-$maxAgeDays))
+}
+
+# Freshest first: dated-recent (newest first), then undated, then stale.
+function Order-ByFresh([object[]]$items) {
+    $fresh  = @($items | Where-Object { $null -ne $_ -and $_.time -and (Test-Fresh $_.time) } | Sort-Object -Property time -Descending)
+    $undated = @($items | Where-Object { $null -ne $_ -and -not $_.time })
+    $stale  = @($items | Where-Object { $null -ne $_ -and $_.time -and -not (Test-Fresh $_.time) } | Sort-Object -Property time -Descending)
+    return @(@($fresh) + @($undated) + @($stale) | Where-Object { $null -ne $_ })
+}
+
+function Get-FreshCount([object[]]$items) {
+    return @($items | Where-Object { $null -ne $_ -and (Test-Fresh ([string]$_.time)) }).Count
 }
 
 function Test-ArticleUrl([string]$url, [string]$pattern) {
@@ -50,34 +100,42 @@ function Test-ArticleUrlAllowGnews([string]$url, [string]$pattern) {
 
 function Get-GNewsItems([string]$site, [string]$pattern) {
     $items = @()
-    try {
-        $domain = ([Uri]$site).Host -replace '^www\.', ''
-        $enc = [Uri]::EscapeDataString("site:$domain")
-        $xml = Fetch-Text "https://news.google.com/rss/search?q=$enc&hl=bn&gl=BD&ceid=BD:bn"
-        $xml = $xml.Replace('<![CDATA[', '').Replace(']]>', '')
-        $blocks = [regex]::Matches($xml, '<item[^>]*>(.*?)</item>', 'Singleline')
-        foreach ($b in $blocks) {
-            $block = $b.Groups[1].Value
-            $t = [regex]::Match($block, '<title>(.*?)</title>', 'Singleline').Groups[1].Value
-            $l = [regex]::Match($block, '<link>([^<]+)</link>', 'Singleline').Groups[1].Value
-            $d = [regex]::Match($block, '<pubDate>(.*?)</pubDate>', 'Singleline').Groups[1].Value
-            if (-not $t -or -not $l) { continue }
-            $t = Clean-Text $t
-            $l = [System.Net.WebUtility]::HtmlDecode($l.Trim())
-            if ($l -notmatch '^https?://') {
-                try { $l = (New-Object Uri((New-Object Uri $site), $l)).ToString() } catch { continue }
+    $domain = ([Uri]$site).Host -replace '^www\.', ''
+    # Time-boxed query first so mirrors return current news, not evergreen
+    # hits; top up unrestricted for low-volume domains.
+    foreach ($when in @('7d', '')) {
+        try {
+            $q = [Uri]::EscapeDataString("site:$domain")
+            if ($when) { $q += [Uri]::EscapeDataString("+when:$when") }
+            $xml = Fetch-Text "https://news.google.com/rss/search?q=$q&hl=bn&gl=BD&ceid=BD:bn"
+            $xml = $xml.Replace('<![CDATA[', '').Replace(']]>', '')
+            $blocks = [regex]::Matches($xml, '<item[^>]*>(.*?)</item>', 'Singleline')
+            foreach ($b in $blocks) {
+                $block = $b.Groups[1].Value
+                $t = [regex]::Match($block, '<title>(.*?)</title>', 'Singleline').Groups[1].Value
+                $l = [regex]::Match($block, '<link>([^<]+)</link>', 'Singleline').Groups[1].Value
+                $d = [regex]::Match($block, '<pubDate>(.*?)</pubDate>', 'Singleline').Groups[1].Value
+                if (-not $t -or -not $l) { continue }
+                $t = Clean-Text $t
+                $l = [System.Net.WebUtility]::HtmlDecode($l.Trim())
+                if ($l -notmatch '^https?://') {
+                    try { $l = (New-Object Uri((New-Object Uri $site), $l)).ToString() } catch { continue }
+                }
+                $t = Remove-PublisherSuffix $t
+                if (Test-JunkTitle $t) { continue }
+                if (-not (Test-ArticleUrlAllowGnews $l $pattern)) { continue }
+                $items += [pscustomobject]@{ title = $t; url = $l; time = (ConvertTo-IsoTime $d); image = (Get-Thumb $block) }
             }
-            if (-not (Test-ArticleUrlAllowGnews $l $pattern)) { continue }
-            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d); image = (Get-Thumb $block) }
+            if ($items.Count -ge 20) { break }
+        } catch {
+            Write-Host ("  gnews fail: {0}" -f $_.Exception.Message)
         }
-    } catch {
-        Write-Host ("  gnews fail: {0}" -f $_.Exception.Message)
     }
     $seen = @{}; $out = @()
     foreach ($i in $items) {
         if ($null -ne $i -and $i.url -and -not $seen.ContainsKey($i.url)) { $seen[$i.url] = $true; $out += $i }
     }
-    return $out
+    return (Order-ByFresh $out)
 }
 
 # Extract a thumbnail image URL from RSS enclosure / media tags, else the
@@ -130,8 +188,10 @@ function Get-FeedItems([string]$feedUrl, [string]$site, [string]$pattern) {
             if ($l -notmatch '^https?://') {
                 try { $l = (New-Object Uri((New-Object Uri $site), $l)).ToString() } catch { continue }
             }
+            $t = Remove-PublisherSuffix $t
+            if (Test-JunkTitle $t) { continue }
             if (-not (Test-ArticleUrl $l $pattern)) { continue }
-            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d); image = (Get-Thumb $block) }
+            $items += [pscustomobject]@{ title = $t; url = $l; time = (ConvertTo-IsoTime $d); image = (Get-Thumb $block) }
         }
     } catch {
         Write-Host ("  feed fail: {0}" -f $_.Exception.Message)
@@ -140,7 +200,7 @@ function Get-FeedItems([string]$feedUrl, [string]$site, [string]$pattern) {
     foreach ($i in $items) {
         if ($null -ne $i -and $i.url -and -not $seen.ContainsKey($i.url)) { $seen[$i.url] = $true; $out += $i }
     }
-    return $out
+    return (Order-ByFresh $out)
 }
 
 function Get-PageItems([string]$pageUrl, [string]$site, [string]$pattern) {
@@ -157,7 +217,7 @@ function Get-PageItems([string]$pageUrl, [string]$site, [string]$pattern) {
             }
             if ($href -notmatch '^https?://') { continue }
             if (-not (Test-ArticleUrl $href $pattern)) { continue }
-            $items += [pscustomobject]@{ title = $text; url = $href; time = ''; image = '' }
+            $items += [pscustomobject]@{ title = $text; url = $href; time = (Get-TimeFromUrl $href); image = '' }
         }
     } catch {
         Write-Host ("  page fail {0}: {1}" -f $pageUrl, $_.Exception.Message)
@@ -166,7 +226,7 @@ function Get-PageItems([string]$pageUrl, [string]$site, [string]$pattern) {
     foreach ($i in $items) {
         if ($null -ne $i -and $i.url -and -not $seen.ContainsKey($i.url)) { $seen[$i.url] = $true; $uniq += $i }
     }
-    return $uniq
+    return (Order-ByFresh $uniq)
 }
 
 function Merge-Items([object[]]$base, [object[]]$extra) {
@@ -190,14 +250,19 @@ foreach ($s in $sources) {
     $pattern = [string]$s.pattern
     $items = @()
 
+    $freshEnough = {
+        param([object[]]$list)
+        (@($list).Count -ge 10) -and ((Get-FreshCount $list) -ge 10)
+    }
+
     foreach ($f in @($s.feeds)) {
         if (-not $f) { continue }
         $newItems = @(Get-FeedItems $f $s.site $pattern | Where-Object { $null -ne $_ })
         $items = @(Merge-Items $items $newItems | Where-Object { $null -ne $_ })
-        if ($items.Count -ge 10) { break }
+        if (& $freshEnough $items) { break }
     }
 
-    if ($items.Count -lt 10) {
+    if (-not (& $freshEnough $items)) {
         $pages = @($s.pages)
         if ($pages.Count -eq 0) { $pages = @($s.site) }
         $pageItems = @()
@@ -211,13 +276,14 @@ foreach ($s in $sources) {
 
     # Last-resort mirror: publishers that block datacenter IPs entirely are
     # unreachable from GitHub runners except through Google News.
-    if ($items.Count -lt 10) {
+    if (-not (& $freshEnough $items)) {
         $gItems = @(Get-GNewsItems $s.site $pattern | Where-Object { $null -ne $_ })
         if ($gItems.Count -gt 0) { Write-Host '  -> Google News mirror used' }
         $items = @(Merge-Items $items $gItems | Where-Object { $null -ne $_ })
     }
 
-    $items = @($items | Where-Object { $null -ne $_ } | Select-Object -First 10)
+    # Final freshness ranking: stale feed items sink below fresh fallbacks.
+    $items = @(Order-ByFresh @($items | Where-Object { $null -ne $_ }) | Select-Object -First 10)
     $status = 'ok'
     if ($items.Count -lt 10) { $status = 'warning'; $failed += $s.name }
     $total += $items.Count

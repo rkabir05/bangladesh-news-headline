@@ -1,4 +1,5 @@
 import json
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -53,6 +54,13 @@ def test_headline_schema():
             assert item["title"]
             assert item["url"].startswith("http")
             assert "bing.com/news/apiclick" not in item["url"]  # redirects resolved
+            # Timestamps must be normalized ISO-8601 or empty (never raw RFC-822).
+            assert item.get("time", "") == "" or re.match(
+                r"^20\d{2}-\d{2}-\d{2}T", item["time"]
+            ), item.get("time", "")
+            # Mirror artifacts must not leak through.
+            assert "tag related all news" not in item["title"].lower()
+            assert not re.search(r"- (SAMAKAL|bdnews24\.com|The Daily Ittefaq)$", item["title"])
             # Thumbnails (optional) must be absolute URLs from enclosures/media tags.
             # Bing News thumbnails (www.bing.com/th?id=...) have no file extension,
             # so only the absolute-URL shape is asserted here.
