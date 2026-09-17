@@ -1,8 +1,17 @@
 const DATA_URL = "data/headlines.json";
-const REFRESH_MS = 10 * 60 * 1000; // 10 minutes, mirrors collector schedule
+const REFRESH_MS = 10 * 60 * 1000; // collector publishes new data every 10 minutes
+const PROBE_MS = 60 * 1000; // cheap HEAD check every minute — keeps mobile views fresh
+const FETCH_TIMEOUT_MS = 15 * 1000;
+const PROBE_TIMEOUT_MS = 8 * 1000;
+const HIDDEN_PROBE_WINDOW_MS = 5 * 60 * 1000; // pause probing 5 min after the page is fully hidden
+
 let allSources = [];
 let countdownTimer = null;
-let nextRefreshAt = null;
+let nextCheckAt = null;
+let probing = false;
+let lastTag = null; // ETag/Last-Modified of the JSON currently rendered
+let dataUpdatedAt = null; // payload.updated_at of the currently rendered data
+let staleUntil = 0; // while hidden: timestamp after which background probing pauses
 
 function esc(value) {
   return String(value ?? "").replace(/[&<>"']/g, c => ({
@@ -22,6 +31,7 @@ function formatDate(value) {
 
 function render(payload) {
   allSources = payload.sources || [];
+  dataUpdatedAt = payload.updated_at || null;
   document.getElementById("updatedAt").textContent = formatDate(payload.updated_at);
   updateSummary();
   paintCards(allSources);
@@ -75,33 +85,116 @@ function applySearch() {
 
 function startCountdown() {
   clearInterval(countdownTimer);
-  nextRefreshAt = Date.now() + REFRESH_MS;
+  nextCheckAt = Date.now() + PROBE_MS;
   countdownTimer = setInterval(() => {
-    const remain = Math.max(0, Math.round((nextRefreshAt - Date.now()) / 1000));
+    const remain = Math.max(0, Math.round((nextCheckAt - Date.now()) / 1000));
     const m = String(Math.floor(remain / 60)).padStart(2, "0");
     const s = String(remain % 60).padStart(2, "0");
     document.getElementById("countdown").textContent = `${m}:${s}`;
   }, 1000);
 }
 
+function isDataStale() {
+  if (!dataUpdatedAt) return false;
+  const updated = new Date(dataUpdatedAt).getTime();
+  if (Number.isNaN(updated)) return true;
+  // Collector runs every 10 minutes; give it a small grace period.
+  return Date.now() - updated > REFRESH_MS + 90 * 1000;
+}
+
+function setStatus(kind, html) {
+  const el = document.getElementById("status");
+  el.className = `alert alert-${kind} border`;
+  el.innerHTML = html;
+}
+
+function cacheTagOf(response) {
+  return response.headers.get("ETag") || response.headers.get("Last-Modified");
+}
+
 async function load() {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
   try {
-    const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
+    const response = await fetch(`${DATA_URL}?t=${Date.now()}`, {
+      cache: "no-store",
+      signal: controller.signal,
+    });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    render(await response.json());
-    document.getElementById("status").className = "alert alert-success border";
-    document.getElementById("status").innerHTML =
-      `<i class="bi bi-check-circle me-2"></i>সর্বশেষ শিরোনাম লোড হয়েছে — প্রতি ১০ মিনিটে অটো রিফ্রেশ চালু।`;
+    const payload = await response.json();
+    lastTag = cacheTagOf(response);
+    render(payload);
     startCountdown();
+    setStatus("success",
+      `<i class="bi bi-check-circle me-2"></i>সর্বশেষ শিরোনাম লোড হয়েছে — মিনিটে মিনিটে আপডেট-চেক চলছে, অ্যাপে ফিরে এলে সঙ্গে সঙ্গে নতুন ডেটা নেওয়া হয়।`);
   } catch (error) {
-    document.getElementById("status").className = "alert alert-danger border";
-    document.getElementById("status").textContent =
-      "ডেটা লোড করা যায়নি। GitHub Actions-এর সর্বশেষ run পরীক্ষা করুন।";
+    setStatus("danger",
+      "ডেটা লোড করা যায়নি — এক মিনিটের মধ্যে আবার চেষ্টা হবে। GitHub Actions-এর সর্বশেষ run পরীক্ষা করুন।");
     console.error(error);
+  } finally {
+    clearTimeout(timer);
   }
+}
+
+// Cheap change-check: has data/headlines.json changed since we rendered it?
+// Mobile browsers suspend JS timers while the phone is locked or the tab is in
+// the background, so a plain setInterval never fires there. Instead we probe
+// every minute while visible AND immediately whenever the page becomes visible
+// again — that is what actually pulls fresh headlines on phones.
+async function probe() {
+  if (probing || document.visibilityState !== "visible") return;
+  if (Date.now() < staleUntil) return;
+  probing = true;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), PROBE_TIMEOUT_MS);
+  try {
+    const response = await fetch(`${DATA_URL}?t=${Date.now()}`, {
+      method: "HEAD",
+      cache: "no-store",
+      signal: controller.signal,
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const tag = cacheTagOf(response);
+    if (!tag || tag !== lastTag) {
+      // New data published (or the server gives no cache tags) — full reload.
+      await load();
+    } else {
+      startCountdown();
+      if (isDataStale()) {
+        setStatus("warning",
+          "সার্ভারে এখনো নতুন ডেটা আসেনি (GitHub Actions চলছে বা দেরি হচ্ছে) — পরের চেকে আবার দেখা হবে।");
+      }
+    }
+  } catch {
+    startCountdown(); // network hiccup — retry on the next tick
+  } finally {
+    clearTimeout(timer);
+    probing = false;
+  }
+}
+
+function handleVisible() {
+  staleUntil = 0;
+  // Coming back from the background is the trigger — never trust timers here.
+  probe();
+}
+
+function handleHidden() {
+  staleUntil = Date.now() + HIDDEN_PROBE_WINDOW_MS;
 }
 
 document.getElementById("searchBox").addEventListener("input", applySearch);
 
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") handleVisible();
+  else handleHidden();
+});
+window.addEventListener("pageshow", event => {
+  // Back/forward cache restore resurfaces the old DOM with dead timers.
+  if (event.persisted) handleVisible();
+});
+window.addEventListener("online", handleVisible);
+
 load();
-setInterval(load, REFRESH_MS);
+setInterval(probe, PROBE_MS);
+setInterval(load, REFRESH_MS); // safety net: force a full refresh every cycle

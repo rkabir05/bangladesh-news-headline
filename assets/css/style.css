@@ -155,4 +155,5 @@ body {
   .hero { padding: 38px 0; }
   .hero h1 { font-size: 1.85rem; }
   .headline-thumb { width: 54px; height: 38px; }
+  .live { font-size: .68rem; letter-spacing: .04em; padding: 5px 10px; }
 }
