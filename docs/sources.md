@@ -22,4 +22,6 @@ Exactly the 15 portals requested, in order. Feed availability is rechecked on ev
 
 Bing News mirror feeds (`https://www.bing.com/news/search?q=site%3A<domain>&format=RSS`) are used for sites that block datacenter traffic; the collector unwraps Bing's redirect links to the original article URLs.
 
+As a last resort, the collector also queries **Google News site-search RSS** (`https://news.google.com/rss/search?q=site:<domain>&hl=bn&gl=BD&ceid=BD:bn`). This always yields items, but its article links point to `news.google.com` redirect pages — clicking them still opens the real article, so they are only accepted when every earlier strategy failed.
+
 Publishers can change or remove feeds at any time; the multi-feed and page fallbacks keep those sources working when that happens.

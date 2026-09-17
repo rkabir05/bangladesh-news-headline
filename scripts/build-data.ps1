@@ -41,6 +41,45 @@ function Test-ArticleUrl([string]$url, [string]$pattern) {
     return $true
 }
 
+# Google News redirect links only appear in the last-resort mirror feed;
+# browsers follow them to the real article.
+function Test-ArticleUrlAllowGnews([string]$url, [string]$pattern) {
+    if ($url -match '^https://news\.google\.com/rss/articles/') { return $true }
+    return (Test-ArticleUrl $url $pattern)
+}
+
+function Get-GNewsItems([string]$site, [string]$pattern) {
+    $items = @()
+    try {
+        $domain = ([Uri]$site).Host -replace '^www\.', ''
+        $enc = [Uri]::EscapeDataString("site:$domain")
+        $xml = Fetch-Text "https://news.google.com/rss/search?q=$enc&hl=bn&gl=BD&ceid=BD:bn"
+        $xml = $xml.Replace('<![CDATA[', '').Replace(']]>', '')
+        $blocks = [regex]::Matches($xml, '<item[^>]*>(.*?)</item>', 'Singleline')
+        foreach ($b in $blocks) {
+            $block = $b.Groups[1].Value
+            $t = [regex]::Match($block, '<title>(.*?)</title>', 'Singleline').Groups[1].Value
+            $l = [regex]::Match($block, '<link>([^<]+)</link>', 'Singleline').Groups[1].Value
+            $d = [regex]::Match($block, '<pubDate>(.*?)</pubDate>', 'Singleline').Groups[1].Value
+            if (-not $t -or -not $l) { continue }
+            $t = Clean-Text $t
+            $l = [System.Net.WebUtility]::HtmlDecode($l.Trim())
+            if ($l -notmatch '^https?://') {
+                try { $l = (New-Object Uri((New-Object Uri $site), $l)).ToString() } catch { continue }
+            }
+            if (-not (Test-ArticleUrlAllowGnews $l $pattern)) { continue }
+            $items += [pscustomobject]@{ title = $t; url = $l; time = (Clean-Text $d) }
+        }
+    } catch {
+        Write-Host ("  gnews fail: {0}" -f $_.Exception.Message)
+    }
+    $seen = @{}; $out = @()
+    foreach ($i in $items) {
+        if ($null -ne $i -and $i.url -and -not $seen.ContainsKey($i.url)) { $seen[$i.url] = $true; $out += $i }
+    }
+    return $out
+}
+
 function Resolve-BingRedirect([string]$url) {
     $url = [System.Net.WebUtility]::HtmlDecode($url)
     if ($url -notmatch 'bing\.com') { return $url }
@@ -148,6 +187,14 @@ foreach ($s in $sources) {
             $pageItems = @(Merge-Items $pageItems @(Get-PageItems $p $s.site $pattern) | Where-Object { $null -ne $_ })
         }
         $items = @(Merge-Items $items $pageItems | Where-Object { $null -ne $_ })
+    }
+
+    # Last-resort mirror: publishers that block datacenter IPs entirely are
+    # unreachable from GitHub runners except through Google News.
+    if ($items.Count -lt 10) {
+        $gItems = @(Get-GNewsItems $s.site $pattern | Where-Object { $null -ne $_ })
+        if ($gItems.Count -gt 0) { Write-Host '  -> Google News mirror used' }
+        $items = @(Merge-Items $items $gItems | Where-Object { $null -ne $_ })
     }
 
     $items = @($items | Where-Object { $null -ne $_ } | Select-Object -First 10)

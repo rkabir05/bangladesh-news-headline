@@ -72,6 +72,44 @@ def resolve_bing_redirect(url: str) -> str:
         return clean
 
 
+def gnews_search_url(domain: str) -> str:
+    """Google News site-search RSS for a domain."""
+    from urllib.parse import quote
+    return (
+        "https://news.google.com/rss/search?q=site:" + quote(domain, safe="")
+        + "&hl=bn&gl=BD&ceid=BD:bn"
+    )
+
+
+def parse_gnews(site_url: str, pattern: str = "") -> list[dict]:
+    """Last-resort mirror: Google News site-search RSS.
+
+    Several publishers block datacenter IPs entirely (runner-direct feeds and
+    homepages return 403), so their only reliable source from a GitHub runner
+    is Google News. Item links are news.google.com redirects; browsers follow
+    them to the article, so gnews links are accepted below the usual filter.
+    """
+    domain = urlparse(site_url).netloc.removeprefix("www.")
+    feed = feedparser.parse(http_get(gnews_search_url(domain)))
+    items: list[dict] = []
+    for entry in feed.entries[: MAX_FETCH_PER_SOURCE * 3]:
+        title = clean_text(entry.get("title", ""))
+        link = entry.get("link", "")
+        if not title or not link:
+            continue
+        published = entry.get("published") or entry.get("updated") or ""
+        items.append({
+            "title": title,
+            "url": urljoin(site_url, link),
+            "time": clean_text(published),
+        })
+    return dedupe([
+        i for i in items
+        if is_probable_article(i["url"], i["title"], pattern)
+        or "news.google.com/rss/articles/" in i["url"]
+    ])
+
+
 def load_sources():
     """Load sources from sources.json (single source of truth for all builders)."""
     path = Path(__file__).resolve().parent / "sources.json"
@@ -206,6 +244,17 @@ def collect_source(source: dict) -> tuple[list[dict], str | None]:
         errors.append(f"homepage: total {len(merged)} usable items")
     except Exception as exc:  # noqa: BLE001
         errors.append(f"homepage: {type(exc).__name__}: {exc}")
+
+    if len(merged) < HEADLINES_PER_SOURCE:
+        try:
+            items = parse_gnews(source["site"], pattern)
+            merged = merge_items(merged, items)
+            if len(merged) >= HEADLINES_PER_SOURCE:
+                errors.append("fallback: Google News mirror (direct feeds blocked)")
+                return merged[:HEADLINES_PER_SOURCE], None
+            errors.append(f"gnews: total {len(merged)} usable items")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"gnews: {type(exc).__name__}: {exc}")
 
     error = " | ".join(errors) if errors else None
     return merged, error
