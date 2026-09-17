@@ -24,16 +24,16 @@ def test_mirror_queries_configured():
 def test_foreign_sections_filtered():
     from fetch_headlines import is_foreign_section_url
 
-    for url, expected in [
-        ("https://samakal.com/bangladesh/national/article-123", True),
-        ("https://samakal.com/international/news/article-123", False),
-        ("https://www.kalerkantho.com/online/sport/news/123456", False),
-        ("https://www.bd-pratidin.com/binodon/2026/09/17/123", False),
-        ("https://bangla.bdnews24.com/national/x/0123456789ab", True),
-        ("https://www.prothomalo.com/sports/cricket/story", False),
-        ("https://www.prothomalo.com/bangladesh/story-xyz", True),
+    for url, is_foreign in [
+        ("https://samakal.com/bangladesh/national/article-123", False),
+        ("https://samakal.com/international/news/article-123", True),
+        ("https://www.kalerkantho.com/online/sport/news/123456", True),
+        ("https://www.bd-pratidin.com/binodon/2026/09/17/123", True),
+        ("https://bangla.bdnews24.com/national/x/0123456789ab", False),
+        ("https://www.prothomalo.com/sports/cricket/story", True),
+        ("https://www.prothomalo.com/bangladesh/story-xyz", False),
     ]:
-        assert is_foreign_section_url(url) is expected, url
+        assert is_foreign_section_url(url) is is_foreign, url
 
 EXPECTED_NAMES = {
     "বাংলাদেশ প্রতিদিন", "প্রথম আলো", "কালবেলা", "ঢাকা পোস্ট", "এশিয়া পোস্ট",
