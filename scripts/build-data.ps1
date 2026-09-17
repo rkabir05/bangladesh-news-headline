@@ -71,6 +71,43 @@ function Test-Fresh([string]$isoTime, [int]$maxAgeDays = 3) {
     return ($dt -ge [datetime]::UtcNow.AddDays(-$maxAgeDays))
 }
 
+# Bangladesh-national filter: URL paths that carry a non-domestic section
+# segment (international/sports/entertainment/lifestyle/business etc.) are
+# excluded so the site only shows Bangladesh headlines.
+$nonLocalSections = @(
+    'international', 'world', 'bishwo', 'bidesh', 'foreign', 'global',
+    'south-asia', 'asia', 'americas', 'europe', 'africa', 'middle-east',
+    'entertainment', 'binodon', 'lifestyle', 'life-style', 'jibonjapon',
+    'jibon_japon', 'life', 'showbiz', 'music', 'fashion', 'technology',
+    'tech', 'probash', 'probashi', 'diaspora', 'sport', 'sports',
+    'kheladhula', 'khela', 'cricket', 'football', 'game', 'games', 'gaming',
+    'esports', 'health', 'shastho', 'religion', 'islam-life', 'dharma',
+    'education', 'shikkha', 'campus', 'job', 'jobs', 'career', 'business',
+    'economy', 'orthoniti', 'trade', 'corporate', 'e-paper', 'epaper',
+    'opinion', 'opinions', 'editorial', 'editorials', 'uproktosh',
+    'khelafat', 'education-job', 'edu-job',    'how-to', 'howto', 'tips', 'astrology', 'bhobishyot', 'recipe',
+    'cooking', 'horoscope', 'religion-life', 'glitz', 'kidz', 'showtime'
+)
+
+# Strong sports/entertainment markers applied ONLY to Google-mirror items,
+# whose real section is hidden behind redirect links.
+$mirrorTitleExcludes = @(
+    'ক্রিকেট', 'ফুটবল', 'বলিউড', 'টলিউড', 'ঢালিউড', 'সিনেমা', 'নাটক',
+    'বিনোদন', 'খেলোয়াড়', 'টুর্নামেন্ট', 'অভিনয়', 'সঙ্গীত', 'ম্যাচ',
+    'উইকেট', 'বিশ্বকাপ'
+)
+
+function Test-LocalSection([string]$url) {
+    if (-not $url) { return $false }
+    $path = [regex]::Replace(([Uri]$url).AbsolutePath, '^/+', '')
+    if (-not $path) { return $true }
+    foreach ($seg in ($path -split '/')) {
+        $seg = $seg.ToLowerInvariant()
+        if ($seg -and ($nonLocalSections -contains $seg)) { return $false }
+    }
+    return $true
+}
+
 # Freshest first: dated-recent (newest first), then undated, then stale.
 function Order-ByFresh([object[]]$items) {
     $fresh  = @($items | Where-Object { $null -ne $_ -and $_.time -and (Test-Fresh $_.time) } | Sort-Object -Property time -Descending)
@@ -88,6 +125,7 @@ function Test-ArticleUrl([string]$url, [string]$pattern) {
     if ($url -match '/(tag|tags|topic|category|author|writer|video|videos|photo|photos|gallery|epaper|archive|login|register|subscribe|contact|about|privacy|terms|jobs|advertisement|rss|feed)(/|$)') { return $false }
     if ($url -match '#') { return $false }
     if ($pattern -and ($url -notmatch $pattern)) { return $false }
+    if (-not (Test-LocalSection $url)) { return $false }
     return $true
 }
 
@@ -98,14 +136,19 @@ function Test-ArticleUrlAllowGnews([string]$url, [string]$pattern) {
     return (Test-ArticleUrl $url $pattern)
 }
 
-function Get-GNewsItems([string]$site, [string]$pattern) {
+function Get-GNewsItems([string]$site, [string]$pattern, [string[]]$extraTerms = @()) {
     $items = @()
     $domain = ([Uri]$site).Host -replace '^www\.', ''
-    # Time-boxed query first so mirrors return current news, not evergreen
-    # hits; top up unrestricted for low-volume domains.
-    foreach ($when in @('7d', '')) {
+    # Scoped queries first (fresh + topic), then the plain time-boxed site
+    # query, then unrestricted top-up.
+    $plan = @()
+    foreach ($t in $extraTerms) { $plan += ,@('7d', $t) }
+    $plan += ,@('7d', ''); $plan += ,@('', '')
+    foreach ($pair in $plan) {
+        $when = $pair[0]; $extra = $pair[1]
         try {
             $q = [Uri]::EscapeDataString("site:$domain")
+            if ($extra) { $q += [Uri]::EscapeDataString("+$extra") }
             if ($when) { $q += [Uri]::EscapeDataString("+when:$when") }
             $xml = Fetch-Text "https://news.google.com/rss/search?q=$q&hl=bn&gl=BD&ceid=BD:bn"
             $xml = $xml.Replace('<![CDATA[', '').Replace(']]>', '')
@@ -124,6 +167,7 @@ function Get-GNewsItems([string]$site, [string]$pattern) {
                 $t = Remove-PublisherSuffix $t
                 if (Test-JunkTitle $t) { continue }
                 if (-not (Test-ArticleUrlAllowGnews $l $pattern)) { continue }
+                if ($mirrorTitleExcludes | Where-Object { $t.Contains($_) }) { continue }
                 $items += [pscustomobject]@{ title = $t; url = $l; time = (ConvertTo-IsoTime $d); image = (Get-Thumb $block) }
             }
             if ($items.Count -ge 20) { break }
@@ -277,7 +321,7 @@ foreach ($s in $sources) {
     # Last-resort mirror: publishers that block datacenter IPs entirely are
     # unreachable from GitHub runners except through Google News.
     if (-not (& $freshEnough $items)) {
-        $gItems = @(Get-GNewsItems $s.site $pattern | Where-Object { $null -ne $_ })
+        $gItems = @(Get-GNewsItems $s.site $pattern @($s.mirror_queries) | Where-Object { $null -ne $_ })
         if ($gItems.Count -gt 0) { Write-Host '  -> Google News mirror used' }
         $items = @(Merge-Items $items $gItems | Where-Object { $null -ne $_ })
     }

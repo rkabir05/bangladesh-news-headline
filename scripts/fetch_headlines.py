@@ -18,7 +18,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from config import (  # noqa: E402
     HEADLINES_PER_SOURCE,
+    MIRROR_TITLE_EXCLUDES,
     MAX_FETCH_PER_SOURCE,
+    NON_LOCAL_SECTION_SEGMENTS,
     REQUEST_TIMEOUT,
     REFRESH_MINUTES,
     USER_AGENT,
@@ -57,7 +59,21 @@ def is_probable_article(url: str, title: str, pattern: str = "") -> bool:
         return False
     if pattern and not re.search(pattern, url, re.IGNORECASE):
         return False
+    if is_foreign_section_url(url):
+        return False
     return True
+
+
+def is_foreign_section_url(url: str) -> bool:
+    """True when the URL path carries a non-Bangladesh section segment.
+
+    The site must only show Bangladesh-national headlines, so links living in
+    international/sports/entertainment/lifestyle/business sections (by path)
+    are excluded. Exact path-SEGMENT matching avoids false positives on words
+    that merely contain these strings.
+    """
+    segments = [s.strip("/").lower() for s in urlparse(url).path.split("/")]
+    return any(seg in NON_LOCAL_SECTION_SEGMENTS for seg in segments)
 
 
 def resolve_bing_redirect(url: str) -> str:
@@ -216,10 +232,17 @@ def fresh_count(items: list[dict]) -> int:
     return sum(1 for i in items if is_fresh(i.get("time", "")))
 
 
-def gnews_search_url(domain: str, when: str = "") -> str:
-    """Google News site-search RSS for a domain, optionally time-boxed."""
+def gnews_search_url(domain: str, when: str = "", extra: str = "") -> str:
+    """Google News site-search RSS for a domain, optionally time-boxed.
+
+    ``extra`` carries a topic keyword (e.g. the Bengali word for "national")
+    that scopes the mirror query to Bangladesh-domestic coverage when a
+    publisher's own national-section feed is unavailable.
+    """
     from urllib.parse import quote
     query = "site:" + quote(domain, safe="")
+    if extra:
+        query += f"+{quote(extra, safe='')}"
     if when:
         query += f"+when:{when}"
     return (
@@ -228,20 +251,27 @@ def gnews_search_url(domain: str, when: str = "") -> str:
     )
 
 
-def parse_gnews(site_url: str, pattern: str = "") -> list[dict]:
+def parse_gnews(site_url: str, pattern: str = "", extra_terms: list[str] | None = None) -> list[dict]:
     """Last-resort mirror: Google News site-search RSS.
 
     Several publishers block datacenter IPs entirely (runner-direct feeds and
     homepages return 403), so their only reliable source from a GitHub runner
     is Google News. Item links are news.google.com redirects; browsers follow
     them to the article, so gnews links are accepted below the usual filter.
+
+    ``extra_terms`` carry topic keywords (e.g. the Bengali word for
+    "national"); the time-boxed queries try them BEFORE the plain site query
+    so the mirror yields Bangladesh-domestic coverage, not evergreen site hits.
     """
     domain = urlparse(site_url).netloc.removeprefix("www.")
     items: list[dict] = []
-    # Time-boxed query first so mirrors return current news, not evergreen hits;
-    # top up unrestricted for low-volume domains.
-    for when in ("7d", ""):
-        feed = feedparser.parse(http_get(gnews_search_url(domain, when)))
+    # Scoped queries first (fresh + topic), then the plain time-boxed site
+    # query, then unrestricted top-up.
+    query_plan = [
+        ("7d", term) for term in (extra_terms or [])
+    ] + [("7d", ""), ("", "")]
+    for when, extra in query_plan:
+        feed = feedparser.parse(http_get(gnews_search_url(domain, when, extra)))
         for entry in feed.entries[: MAX_FETCH_PER_SOURCE * 3]:
             title = clean_text(entry.get("title", ""))
             link = entry.get("link", "")
@@ -249,6 +279,10 @@ def parse_gnews(site_url: str, pattern: str = "") -> list[dict]:
                 continue
             title = strip_publisher_suffix(title)
             if is_junk_title(title):
+                continue
+            # Mirror items hide their true section behind redirect links, so a
+            # title-level sports/entertainment gate applies on top.
+            if any(word in title for word in MIRROR_TITLE_EXCLUDES):
                 continue
             items.append({
                 "title": title,
@@ -258,6 +292,7 @@ def parse_gnews(site_url: str, pattern: str = "") -> list[dict]:
             })
         if len(items) >= MAX_FETCH_PER_SOURCE:
             break
+        time.sleep(1)  # politeness delay between mirror attempts
     return rank_items(dedupe([
         i for i in items
         if is_probable_article(i["url"], i["title"], pattern)
@@ -420,7 +455,7 @@ def collect_source(source: dict) -> tuple[list[dict], str | None]:
 
     if not done and not enough():
         try:
-            items = parse_gnews(source["site"], pattern)
+            items = parse_gnews(source["site"], pattern, source.get("mirror_queries", []))
             merged = merge_items(merged, items)
             if enough():
                 done = True

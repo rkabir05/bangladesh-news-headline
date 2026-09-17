@@ -7,7 +7,33 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from config import SOURCES, HEADLINES_PER_SOURCE, REFRESH_MINUTES  # noqa: E402
+from config import (  # noqa: E402
+    SOURCES,
+    HEADLINES_PER_SOURCE,
+    NON_LOCAL_SECTION_SEGMENTS,
+    REFRESH_MINUTES,
+)
+
+
+def test_mirror_queries_configured():
+    for source in SOURCES:
+        assert isinstance(source.get("mirror_queries", []), list)
+        assert source.get("mirror_queries"), source["name"]
+
+
+def test_foreign_sections_filtered():
+    from fetch_headlines import is_foreign_section_url
+
+    for url, expected in [
+        ("https://samakal.com/bangladesh/national/article-123", True),
+        ("https://samakal.com/international/news/article-123", False),
+        ("https://www.kalerkantho.com/online/sport/news/123456", False),
+        ("https://www.bd-pratidin.com/binodon/2026/09/17/123", False),
+        ("https://bangla.bdnews24.com/national/x/0123456789ab", True),
+        ("https://www.prothomalo.com/sports/cricket/story", False),
+        ("https://www.prothomalo.com/bangladesh/story-xyz", True),
+    ]:
+        assert is_foreign_section_url(url) is expected, url
 
 EXPECTED_NAMES = {
     "বাংলাদেশ প্রতিদিন", "প্রথম আলো", "কালবেলা", "ঢাকা পোস্ট", "এশিয়া পোস্ট",
