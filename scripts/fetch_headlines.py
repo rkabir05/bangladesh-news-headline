@@ -424,7 +424,11 @@ def collect_source(source: dict) -> tuple[list[dict], str | None]:
         except Exception as exc:  # noqa: BLE001
             errors.append(f"gnews: {type(exc).__name__}: {exc}")
 
-    merged = rank_items(merged)[:HEADLINES_PER_SOURCE]
+    # Hard ceiling: items older than a week never pad a short list — showing
+    # fewer current headlines beats resurfacing stale ones (self-heals next run).
+    merged = rank_items(
+        [i for i in merged if is_fresh(i.get("time", ""), max_age_days=7)]
+    )[:HEADLINES_PER_SOURCE]
 
     error = " | ".join(errors) if errors else None
     return merged, error

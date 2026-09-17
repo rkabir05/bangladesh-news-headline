@@ -283,7 +283,11 @@ foreach ($s in $sources) {
     }
 
     # Final freshness ranking: stale feed items sink below fresh fallbacks.
-    $items = @(Order-ByFresh @($items | Where-Object { $null -ne $_ }) | Select-Object -First 10)
+    # Hard ceiling: items older than a week never pad a short list — showing
+    # fewer current headlines beats resurfacing stale ones (self-heals next run).
+    $items = @(
+        Order-ByFresh @($items | Where-Object { $null -ne $_ -and (Test-Fresh ([string]$_.time) 7) }) | Select-Object -First 10
+    )
     $status = 'ok'
     if ($items.Count -lt 10) { $status = 'warning'; $failed += $s.name }
     $total += $items.Count
