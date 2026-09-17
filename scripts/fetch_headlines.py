@@ -393,44 +393,53 @@ def collect_source(source: dict) -> tuple[list[dict], str | None]:
             and fresh_count(merged) >= HEADLINES_PER_SOURCE
         )
 
+    done = False
+
     for feed_url in source.get("feeds", []):
         try:
             items = parse_feed(source["site"], feed_url, pattern)
             merged = merge_items(merged, items)
             if enough():
-                return merged[:HEADLINES_PER_SOURCE], None
+                done = True
+                break
         except Exception as exc:  # noqa: BLE001 - collect and report
             errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
 
         time.sleep(1)  # politeness delay between feed attempts
 
-    try:
-        items = parse_homepage(source["site"], pattern, source.get("pages", []))
-        merged = merge_items(merged, items)
-        if enough():
-            return merged[:HEADLINES_PER_SOURCE], None
-        errors.append(f"homepage: total {len(merged)} usable items")
-    except Exception as exc:  # noqa: BLE001
-        errors.append(f"homepage: {type(exc).__name__}: {exc}")
+    if not done:
+        try:
+            items = parse_homepage(source["site"], pattern, source.get("pages", []))
+            merged = merge_items(merged, items)
+            if enough():
+                done = True
+            else:
+                errors.append(f"homepage: total {len(merged)} usable items")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"homepage: {type(exc).__name__}: {exc}")
 
-    if not enough():
+    if not done and not enough():
         try:
             items = parse_gnews(source["site"], pattern)
             merged = merge_items(merged, items)
             if enough():
+                done = True
                 errors.append("fallback: Google News mirror (direct feeds blocked)")
-                return merged[:HEADLINES_PER_SOURCE], None
-            errors.append(f"gnews: total {len(merged)} usable items")
+            else:
+                errors.append(f"gnews: total {len(merged)} usable items")
         except Exception as exc:  # noqa: BLE001
             errors.append(f"gnews: {type(exc).__name__}: {exc}")
 
     # Hard ceiling: items older than a week never pad a short list — showing
     # fewer current headlines beats resurfacing stale ones (self-heals next run).
+    # Applied on every exit path, including the successful early ones.
     merged = rank_items(
         [i for i in merged if is_fresh(i.get("time", ""), max_age_days=7)]
     )[:HEADLINES_PER_SOURCE]
 
-    error = " | ".join(errors) if errors else None
+    # A source that completed early (fresh via feeds/pages/gnews) reports no
+    # error; only the shortfall path carries the diagnostic trail.
+    error = None if done else (" | ".join(errors) if errors else None)
     return merged, error
 
 
